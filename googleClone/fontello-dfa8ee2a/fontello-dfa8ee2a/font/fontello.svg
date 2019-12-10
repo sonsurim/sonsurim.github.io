@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2019 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="th" unicode="&#xe800;" d="M0-15q0 130 130 130t130-130-130-130-130 130z m0 365q0 130 130 130t130-130-130-130-130 130z m0 365q0 130 130 130t130-130-130-130-130 130z m365-730q0 130 130 130t130-130-130-130-130 130z m0 365q0 130 130 130t130-130-130-130-130 130z m0 365q0 130 130 130t130-130-130-130-130 130z m364-730q0 130 131 130 130 0 130-130t-130-130q-131 0-131 130z m0 365q0 130 131 130 130 0 130-130t-130-130q-131 0-131 130z m0 365q0 130 131 130 130 0 130-130t-130-130q-131 0-131 130z" horiz-adv-x="990" />
+
+<glyph glyph-name="th-1" unicode="&#xe801;" d="M0-150l0 250 250 0 0-250-250 0z m0 375l0 250 250 0 0-250-250 0z m0 375l0 250 250 0 0-250-250 0z m375-750l0 250 250 0 0-250-250 0z m0 375l0 250 250 0 0-250-250 0z m0 375l0 250 250 0 0-250-250 0z m375-750l0 250 250 0 0-250-250 0z m0 375l0 250 250 0 0-250-250 0z m0 375l0 250 250 0 0-250-250 0z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>

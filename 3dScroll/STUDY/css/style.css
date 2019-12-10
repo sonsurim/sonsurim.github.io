@@ -1,0 +1,269 @@
+/* common */
+body {
+    height: 500vw;
+    font-family: 'Apple SD Gothic Neo', 'Roboto', 'Noto Sans KR', NanumGothic, 'Malgun Gothic', sans-serif;
+    -webkit-overflow-scrolling: touch;
+    color: #555;
+    background: #fff000;
+}
+
+
+/* world, stage, house */
+.world {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    perspective: 1000px;
+}
+.stage {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    transform-style: preserve-3d;
+}
+.house {
+    width: 100vw;
+    height: 100vh;
+    transform: translateZ(-490vw);
+    transform-style: preserve-3d;
+}
+
+
+/* wall */
+.wall {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.8);
+}
+.wall-left {
+    width: 1000vw;
+    background: #f8f8f8;
+    transform: rotateY(90deg) translateZ(-500vw);
+}
+.wall-right {
+    width: 1000vw;
+    background: #f8f8f8;
+    transform: rotateY(90deg) translateZ(-400vw);
+}
+.wall-front-a {
+    transform: translateZ(300vw);
+}
+.wall-front-b {
+    transform: translateZ(50vw);
+}
+.wall-front-c {
+    transform: translateZ(-200vw);
+}
+.wall-front-d {
+    transform: translateZ(-500vw);
+}
+.wall-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.wall-title {
+    font-size: 5rem;
+}
+
+
+/* progress */
+.progress-bar-con {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 5px;
+    background: #555;
+}
+.progress-bar {
+    width: 0;
+    height: 100%;
+    background: #00a8ff;
+}
+
+
+/* character */
+/* 캐릭터 자체의 위치 및 크기 */
+.character {
+    position: absolute;
+    left: 12%;
+    bottom: 5%;
+    /* 캐릭터 자체 원본비율대로 상대적인 값을 줌 (width, height) */
+    width: 10vw;
+    height: 15.58vw;
+    transform-style: preserve-3d;
+}
+/* 실제 각 부위별의 앞면, 뒷면을 감싼 컨테이너 */
+.character-face-con {
+    /* 부위별로 원하는 위치에 조립하기위해 */
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: 1s;
+}
+/* 실제 각 부위별의 앞면 */
+.character-face {
+    /* 앞,뒷면 뒤집어서 겹쳐놓아야됨 */
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    /* 포개진 뒷면이 안보이게 설정, 보이면 오류처럼 보임 */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+/* 실제 각 부위별의 뒷면 */
+.character-face.face-back {
+    transform: rotateY(180deg);
+}
+
+/* character position */
+/* 캐릭터 부위별로 위치와 크기 등 세팅 */
+.character-head {
+    left: calc(40 / 856 * 100%);
+    top: calc(130 / 1334 * 100%);
+    z-index: 60;
+    width: calc(770 / 856 * 100%);
+    height: calc(648 / 1334 * 100%);
+    transform-origin: center bottom;
+    animation: ani-head 0.6s infinite alternate cubic-bezier(0.46, 0.18, 0.66, 0.93);
+}
+.character-body {
+    left: calc(208 / 856 * 100%);
+    top: calc(647 / 1334 * 100%);
+    z-index: -10;
+    width: calc(450 / 856 * 100%);
+    height: calc(385 / 1334 * 100%);
+    transform-origin: center center;
+}
+.character-arm-right {
+    left: 0;
+    top: calc(610 / 1334 * 100%);
+    width: calc(244 / 856 * 100%);
+    height: calc(307 / 1334 * 100%);
+    transform-origin: right top;
+}
+.character-arm-left {
+    left: calc(603 / 856 * 100%);
+    top: calc(620 / 1334 * 100%);
+    width: calc(244 / 856 * 100%);
+    height: calc(307 / 1334 * 100%);
+    transform-origin: left top;
+}
+.character-leg-right {
+    left: calc(210 / 856 * 100%);
+    top: calc(1025 / 1334 * 100%);
+    width: calc(230 /  856 * 100%);
+    height: calc(300 / 1334 * 100%);
+    transform-origin: center top;
+}
+.character-leg-left {
+    left: calc(423 / 856 * 100%);
+    top: calc(1025 / 1334 * 100%);
+    width: calc(230 /  856 * 100%);
+    height: calc(300 / 1334 * 100%);
+    transform-origin: center top;
+}
+
+
+/* character bgimg */
+.character-head-face.face-front {
+    background-image: url('/3D_Scroll/img/ordi_head_front.png');
+}
+.character-head-face.face-back {
+    background-image: url('/3D_Scroll/img/ordi_head_back.png');
+}
+.character-body-face.face-front {
+    background-image: url('/3D_Scroll/img/ordi_body_front.png');
+}
+.character-body-face.face-back {
+    background-image: url('/3D_Scroll/img/ordi_body_back.png');
+}
+.character-arm-right .face-front {
+    background-image: url('/3D_Scroll/img/ordi_arm_0.png');
+}
+.character-arm-right .face-back {
+    background-image: url('/3D_Scroll/img/ordi_arm_1.png');
+}
+.character-arm-left .face-front {
+    background-image: url('/3D_Scroll/img/ordi_arm_1.png');
+}
+.character-arm-left .face-back {
+    background-image: url('/3D_Scroll/img/ordi_arm_0.png');
+}
+.character-leg-right .face-front {
+    background-image: url('/3D_Scroll/img/ordi_leg_0.png');
+}
+.character-leg-right .face-back {
+    background-image: url('/3D_Scroll/img/ordi_leg_1.png');
+}
+.character-leg-left .face-front {
+    background-image: url('/3D_Scroll/img/ordi_leg_1.png');
+}
+.character-leg-left .face-back {
+    background-image: url('/3D_Scroll/img/ordi_leg_0.png');
+}
+
+
+/* character direction */
+.character[data-direction='forward'] {
+    transform: rotateY(180deg);
+}
+.character[data-direction='backward'] {
+    transform: rotateY(0deg);
+}
+.character[data-direction='left'] {
+    transform: rotateY(-90deg);
+}
+.character[data-direction='right'] {
+    transform: rotateY(90deg);
+}
+
+
+/* character running animation */
+.character.running .character-leg-right {
+    animation: ani-running-leg 0.2s alternate infinite linear;
+}
+.character.running .character-leg-left {
+    animation: ani-running-leg 0.2s alternate-reverse infinite linear;
+}
+.character.running .character-arm {
+    animation: ani-running-arm 0.2s alternate infinite linear;
+}
+
+
+ /* animation */
+@keyframes ani-head {
+    to { transform: rotateX(-10deg); }
+}
+/* 다리 움직이는 애니메이션 */
+@keyframes ani-running-leg {
+    from {
+        transform: rotateX(-30deg);
+    }
+    to {
+        transform: rotateX(30deg);
+    }
+}
+/* 팔 움직이는 애니메이션 */
+@keyframes ani-running-arm {
+    from {
+        transform: rotateY(30deg);
+    }
+    to {
+        transform: rotateY(-30deg);
+    }
+}
