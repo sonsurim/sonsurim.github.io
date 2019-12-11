@@ -23,7 +23,8 @@ function saveName(){
     localStorage.setItem('user', currentUser);
 };
 
-function greetingSubmitHandler(){
+function greetingSubmitHandler(e){
+    e.preventDefault();
     currentUser = greetingInput.value;
     greetingInput.value = '';
     showName();
