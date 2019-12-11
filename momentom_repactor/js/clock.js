@@ -1,3 +1,4 @@
+(function(){
 const clockContainer = document.querySelector(".clock-container");
 const clockTitle = clockContainer.querySelector("h1");
 
@@ -26,5 +27,4 @@ function init(){
     setInterval(getTime,1000);
 }
 
-init();
-
+init();})();

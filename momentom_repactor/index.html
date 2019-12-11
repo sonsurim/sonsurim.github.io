@@ -12,13 +12,27 @@
         <div class="clock-container">
             <h1>00:00</h1>
         </div>
-        <div class="todo-container">
-            <p>오신 것을 환영합니다.</p>
+        <div class="greeting-container">
+            <p>What's your Name?</p>
             <form>
                 <input type="text">
             </form>
         </div>
+        <div class="todo-container hide">
+            <p></p>
+            <form>
+                <input type="text">
+            </form>
+            <div class="todo-status">
+                <span class="todo-all showing">ALL()</span>
+                <span class="todo-active">ACTIVE()</span>
+                <span class="todo-complete">COMPLETE()</span>
+            </div>
+            <ul></ul>
+        </div>
     </div>
     <script src="js/clock.js"></script>
+    <script src="js/todo2.js"></script>
+    <script src="js/greeting2.js"></script>
 </body>
 </html>

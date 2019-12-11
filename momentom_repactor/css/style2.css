@@ -1,1 +1,11 @@
 @import url("reset.css");
+
+
+.hide{
+    display : none;
+}
+
+.showing{
+    color : red;
+    /* display : block; */
+}
