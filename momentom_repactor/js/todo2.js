@@ -2,14 +2,14 @@ const todoContainer = document.querySelector('.todo-container');
 const todoTitle = todoContainer.querySelector('p');
 const todoForm = todoContainer.querySelector('form');
 const todoInput = todoContainer.querySelector('input');
-const todoStatus = todoContainer.querySelector('.todo-status')
 
-let todoList = localStorage.getItem('todolist');
+let todoList = [];
 
 function loadTodo(){
-    todoContainer.classList.remove('hide');
-    todoList = [];
     const currentTodo = localStorage.getItem('todolist');
+    const p = todoContainer.querySelector('p');
+    todoContainer.classList.remove('hide');
+    p.textContent = `${currentUser}'s TodoList`;
     if(currentTodo !== null){
         const parseTodo = JSON.parse(currentTodo);
         parseTodo.forEach(function(toDo){
@@ -74,21 +74,13 @@ function clickDelHandler(e){
     saveTodo();
 }
 
-function clickStatusHandler(e){
-    const all = todoContainer.querySelector('.todo-all');
-    const active = todoContainer.querySelector('.todo-active');
-    const complete = todoContainer.querySelector('.todo-complete');
-    if(e.target === all){
-        all.classList.add('showing');
-        active.classList.remove('showing');
-        complete.classList.remove('showing');
-    }else if(e.target === active){
-        active.classList.add('showing');
-        all.classList.remove('showing');
-        complete.classList.remove('showing');
-    }else if(e.target === complete){
-        complete.classList.add('showing');
-        all.classList.remove('showing');
-        active.classList.remove('showing');
+function clickClearHandler(e){
+    const ul = document.querySelector('ul');
+    const li = document.querySelector('li');
+    while(ul.hasChildNodes()){
+        ul.removeChild(ul.firstChild);
     }
+    localStorage.removeItem('todolist');
+    todoList = [];
+    saveTodo();
 }

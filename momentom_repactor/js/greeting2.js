@@ -10,7 +10,6 @@ function loadName(){
     if (currentUser !== null){
         showName();
         loadTodo();
-        // showStatus();
     };
 };
 
@@ -31,10 +30,11 @@ function greetingSubmitHandler(e){
 };
 
 function init(){
+    const clear = document.querySelector('.clear');
     loadName();
     greetingForm.addEventListener('submit', greetingSubmitHandler);
     todoForm.addEventListener('submit', todoSubmitHandler);
-    todoStatus.addEventListener('click', clickStatusHandler);
+    clear.addEventListener('click', clickClearHandler);
 };
 
 init();
