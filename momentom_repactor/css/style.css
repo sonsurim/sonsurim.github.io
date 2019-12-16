@@ -6,8 +6,6 @@ body{
     background-color : #f6e58d;
 }
 
-.container{
-}
 
 /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
 @media all and (max-width:767px) {
@@ -19,7 +17,7 @@ body{
         display: block;
         width : 85vw;
         height : 7vw;
-        margin : 1.5rem auto 3rem auto;
+        margin : 1.5rem auto 2.5rem auto;
         font-size: 2rem;
         padding : 1rem;
         border: none;
@@ -35,9 +33,10 @@ body{
 
     /* todo-bar */
     .todo-bar{
+        font-size : 2.4rem;
         position: relative;
         width : 90vw;
-        padding-bottom : 1rem;
+        padding-bottom : .5rem;
         margin: 0 auto;
         text-align: center;
         border-bottom: 2px solid #535c68;
@@ -54,10 +53,84 @@ body{
 
     /* todolist */
     .todo-list{
-        border : 1px solid blue;
+        width : 90vw;
+        height : 100%;
+        margin : 0 auto;
     }
     .todo-list li{
-        border : 1px solid red;
+        position: relative;
+        text-align: center;
+        width : 100%;
+        height : 10vw;
+        display: block;
+        border-bottom : 1px solid #535c68;
+    }
+    .todo-list span{
+        display: inline-block;
+        text-align: left;
+        width : 80%;
+        height: 100%;
+        padding : .6rem 1.5rem .6rem 1.5rem;
+    }
+    .complete-btn{
+        position: absolute;
+        left : 0;
+        width : 10%;
+        height: 100%;
+        background: transparent;
+        border : none;
+        outline: none;
+    }
+    .delete-btn{
+        position: absolute;
+        right : 0;
+        width : 10%;
+        height : 100%;
+        border : none;
+        outline : none;
+        background: transparent;
+    }
+
+
+    /* bg-line */
+    .line-container{
+        position: absolute;
+        z-index: -1;
+        width : 90vw;
+        height : 100%;
+        margin : 0 auto;
+        /* border : 1px solid red; */
+    }
+    .row{
+        position: absolute;
+        display: block;
+        border: 1px solid red;
+        width : 10%;
+        height: 100%;
+    }
+    .line-container hr{
+        z-index: -1;
+        margin : 0;
+        position: relative;
+        text-align: center;
+        width : 100%;
+        padding-bottom : 10vw;
+        border : none;
+        border-bottom : 1px solid #535c68;
+    }
+
+
+    /* clear */
+    .clear{
+        position: absolute;
+        right : 4vw;
+        border : none;
+        background : transparent;
+        margin : 1rem;
+        font-family: 'Nanum Pen Script', cursive;
+        font-size : 2.6rem;
+        opacity: 0.7;
+        outline: none;
     }
 
 }
