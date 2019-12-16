@@ -5,30 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Momentom - repactor</title>
-    <link rel ="stylesheet" href="css/style2.css" />
+    <link rel ="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap&subset=korean" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <div class="greeting-container">
-            <p>What's your Name?</p>
-            <form>
-                <input type="text">
+            <p class="title">오늘의 할 일</p>
+            <form class="greeting-form">
+                <input type="text" placeholder="+ 이름을 입력해주세요.">
             </form>
         </div>
         <div class="todo-container hide">
-            <p></p>
-            <form>
-                <input type="text">
+            <p class="title">오늘의 할 일</p>
+            <form class="todo-form">
+                    <input type="text" placeholder="+  무엇을 할까요?">
             </form>
-            <ul></ul>
-            <div class="clock-container">
-                <h1>00:00</h1>
+            <div class="todo-bar">
+                <span>확인</span>
+                <span>내용</span>
+                <span>삭제</span>
             </div>
-            <button class="clear">clear</button>
+            <ul class="todo-list">
+            </ul>
+            <div class="clear-container">
+                <!-- <div class="clock-container">
+                    <h1>00:00</h1>
+                </div> -->
+                <button class="clear">모두 지우기</button>
+            </div>
         </div>
     </div>
-    <script src="js/clock.js"></script>
-    <script src="js/todo2.js"></script>
-    <script src="js/greeting2.js"></script>
+    <!-- <script src="js/clock.js"></script> -->
+    <script src="js/todo.js"></script>
+    <script src="js/greeting.js"></script>
 </body>
 </html>

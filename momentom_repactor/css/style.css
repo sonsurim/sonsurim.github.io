@@ -1,124 +1,81 @@
-@import url("./reset.css");
+@import url("reset.css");
 
-body {
-  background: #000;
-  color : #fff;
-  text-align: center;
+/* common */
+body{
+    font-family: 'Nanum Pen Script', cursive;
+    background-color : #f6e58d;
 }
 
-.center{
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform: translate(-50%, -50%);
+.container{
 }
 
-.weather-container{
-  position : absolute;
-  right : 0;
-  top : 0;
-  padding : 1rem 1rem 0 0;
-  text-align: right;
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
+@media all and (max-width:767px) {
+    /* common */
+    body{
+        font-size : 2.8rem;
+    }
+    input{
+        display: block;
+        width : 85vw;
+        height : 7vw;
+        margin : 1.5rem auto 3rem auto;
+        font-size: 2rem;
+        padding : 1rem;
+        border: none;
+        outline: none;
+    }
+
+    /* all */
+    .title{
+        padding : 4rem 0 0 4rem;
+        font-size : 3.2rem;
+    }
+
+
+    /* todo-bar */
+    .todo-bar{
+        position: relative;
+        width : 90vw;
+        padding-bottom : 1rem;
+        margin: 0 auto;
+        text-align: center;
+        border-bottom: 2px solid #535c68;
+    }
+    .todo-bar span:first-child{
+        position: absolute;
+        left: 2vw;
+    }
+    .todo-bar span:last-child{
+        position: absolute;
+        right : 2vw;
+    }
+
+
+    /* todolist */
+    .todo-list{
+        border : 1px solid blue;
+    }
+    .todo-list li{
+        border : 1px solid red;
+    }
+
 }
 
-.weather-container > span:nth-child(1){
-  font-weight: 400;
-  font-size : 1.5rem;
+
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
+@media all and (min-width:768px) and (max-width:1023px) {
+
 }
 
-.clock-title{
-  font-size : 5rem;
-  margin: 0;
+
+/* PC (해상도 1024px)*/
+@media all and (min-width:1024px) {
+
 }
 
-.greeting-title{
-  margin-top : 0;
+/* js controll */
+.hide{
+    display : none;
+    z-index: -100;
 }
-
-.input-text {
-  width: 100%;
-  padding-top: .4em;
-  background: none;
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
-  border-color: #fff;
-  font-size : 1.8rem;
-  color: #fff;
-  text-align: center;
-  animation: fadeIn .5s linear;
-}
-
-.input-text:focus {
-  outline: none;
-}
-
-.todo-title{
-  margin : 0;
-  font-weight: normal;
-}
-
-.todo-ul{
-  padding : 0;
-  animation: fadeIn .5s linear;
-}
-
-.todo-list{
-  list-style: none;
-  padding : .2em;
-  font-size : 1.8rem;
-  animation: fadeIn .5s linear;
-}
-
-.checkBtn{
-  background: none;
-  border: 2px solid #fff;
-  width: 1.5em;
-  height: 1.5em;
-  border-radius: 20%;
-  text-align: center;
-  font-size: 1rem;
-  color: #fff;
-  vertical-align: middle;
-  margin-right: .5em;
-  margin-top: -.5em;
-  cursor: pointer;
-  padding: 0 .1em .1em .1em;
-}
-
-.checkBtn:hover:before {
-  content:"✔";
-}
-
-/* js관련 */
-.form,
-.greeting,
-.clock,
-.todo,
-.weather,
-.place {
-  display: none;
-}
-
-.showing {
-  display: block;
-}
-
-@keyframes fadeIn {
-  from{
-    opacity: 0;
-  }
-  to{
-    opacity: 1;
-  }
-}
-
-.bgimg{
-  background-size: cover;
-  animation: fadeIn .5s linear;
-}
-
-/* js관련 */
-
-
-
