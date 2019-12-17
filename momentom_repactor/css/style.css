@@ -11,7 +11,7 @@ body{
 @media all and (max-width:767px) {
     /* common */
     body{
-        font-size : 2.8rem;
+        font-size : 2.4rem;
     }
     input{
         display: block;
@@ -35,7 +35,7 @@ body{
 
     /* todo-bar */
     .todo-bar{
-        font-size : 2.4rem;
+        font-size : 2.2rem;
         position: relative;
         width : 90vw;
         padding-bottom : .5rem;
@@ -73,12 +73,12 @@ body{
         text-align: left;
         width : 80%;
         height: 100%;
-        padding : 2rem;
+        padding : 0 2rem;
     }
     .complete-btn{
         position: absolute;
         left : 0;
-        width : 10%;
+        width : 15%;
         height: 100%;
         background: transparent;
         border : none;
@@ -104,7 +104,7 @@ body{
         background : transparent;
         margin : 1rem;
         font-family: 'Nanum Pen Script', cursive;
-        font-size : 2.4rem;
+        font-size : 2.2rem;
         opacity: 0.5;
         outline: none;
     }
@@ -115,7 +115,7 @@ body{
         background : transparent;
         margin : 1rem;
         font-family: 'Nanum Pen Script', cursive;
-        font-size : 2.4rem;
+        font-size : 2.2rem;
         opacity: 0.5;
         outline: none;
     }
