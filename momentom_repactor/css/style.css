@@ -25,6 +25,9 @@ body{
         outline: none;
         /* -webkit-outline: none; */
     }
+    button{
+        padding : 0;
+    }
 
     /* all */
     .container{
