@@ -31,7 +31,7 @@ function showTodo(text){
     delBtn.classList.add('delete-btn');
     li.dataset.id = todoList.length + 1;
     span.textContent = text;
-    completeBtn.textContent = `🤗`;
+    completeBtn.textContent = `✍`;
     delBtn.textContent = `X`;
     li.appendChild(completeBtn);
     li.appendChild(span);
