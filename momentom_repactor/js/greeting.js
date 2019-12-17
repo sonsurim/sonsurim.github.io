@@ -38,7 +38,7 @@ function init(){
     reset.addEventListener('click', clickResetHandler);
     todoForm.addEventListener('keypress', function(e){
         // enter key code is 13
-        if(e.which === 13){
+        if(e.keyCode === 13){
             todoSubmitHandler();
          }
      })
