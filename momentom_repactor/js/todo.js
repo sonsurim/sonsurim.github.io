@@ -93,4 +93,5 @@ function clickResetHandler(){
     localStorage.removeItem('todolist');
     todoList = [];
     saveTodo();
+    window.location.reload();
 }
