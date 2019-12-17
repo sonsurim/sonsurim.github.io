@@ -55,6 +55,7 @@ body{
 
     /* todolist */
     .todo-list{
+        position: relative;
         width : 90vw;
         height : 100%;
         margin : 0 auto;
@@ -63,7 +64,7 @@ body{
         position: relative;
         text-align: center;
         width : 100%;
-        height : 10vw;
+        min-height : 10vw;
         display: block;
         border-bottom : 1px solid #535c68;
     }
@@ -72,7 +73,7 @@ body{
         text-align: left;
         width : 80%;
         height: 100%;
-        padding : .6rem 1.5rem .6rem 1.5rem;
+        padding : 2rem;
     }
     .complete-btn{
         position: absolute;
@@ -81,6 +82,7 @@ body{
         height: 100%;
         background: transparent;
         border : none;
+        border-right : 1px solid red;
         outline: none;
     }
     .delete-btn{
@@ -91,34 +93,6 @@ body{
         border : none;
         outline : none;
         background: transparent;
-    }
-
-
-    /* bg-line */
-    .line-container{
-        position: absolute;
-        z-index: -1;
-        width : 90vw;
-        height : 100%;
-        margin : 0 auto;
-        /* border : 1px solid red; */
-    }
-    .row{
-        position: absolute;
-        display: block;
-        border: 1px solid red;
-        width : 10%;
-        height: 100%;
-    }
-    .line-container hr{
-        z-index: -1;
-        margin : 0;
-        position: relative;
-        text-align: center;
-        width : 100%;
-        padding-bottom : 10vw;
-        border : none;
-        border-bottom : 1px solid #535c68;
     }
 
 
