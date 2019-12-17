@@ -41,7 +41,7 @@ body{
         padding-bottom : .5rem;
         margin: 0 auto;
         text-align: center;
-        border-bottom: 2px solid #535c68;
+        border-bottom: 2px solid black;
     }
     .todo-bar span:first-child{
         position: absolute;
@@ -66,14 +66,14 @@ body{
         width : 100%;
         min-height : 10vw;
         display: block;
-        border-bottom : 1px solid #535c68;
+        border-bottom : 1px solid black;
     }
     .todo-list span{
         display: inline-block;
         text-align: left;
         width : 70vw;
         height: 100%;
-        padding : .5rem 1.5rem .5rem 1.5rem;
+        padding : 1.5vw;
     }
     .complete-btn{
         position: absolute;
