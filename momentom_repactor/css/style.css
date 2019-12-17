@@ -73,7 +73,7 @@ body{
         text-align: left;
         width : 70vw;
         height: 100%;
-        padding : .6rem 1rem .6rem 1rem;
+        padding : .5rem 1.5rem .5rem 1.5rem;
     }
     .complete-btn{
         position: absolute;
@@ -99,7 +99,7 @@ body{
     /* ect */
     .clear{
         position: absolute;
-        right : 1vw;
+        right : .5vw;
         border : none;
         background : transparent;
         margin : 1rem;
@@ -110,7 +110,7 @@ body{
     }
     .reset{
         position: absolute;
-        left : 1vw;
+        left : .5vw;
         border : none;
         background : transparent;
         margin : 1rem;
