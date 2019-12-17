@@ -29,7 +29,7 @@ body{
     /* all */
     .title{
         padding : 4rem 0 0 4rem;
-        font-size : 3.2rem;
+        font-size : 3rem;
     }
 
 
@@ -71,14 +71,14 @@ body{
     .todo-list span{
         display: inline-block;
         text-align: left;
-        width : 68vw;
+        width : 69vw;
         height: 100%;
-        padding : 1.5vw 2vw;
+        padding : 1.5vw 2.5vw;
     }
     .complete-btn{
         position: absolute;
         left : 0;
-        width : 12vw;
+        width : 11vw;
         height: 100%;
         background: transparent;
         border : none;
