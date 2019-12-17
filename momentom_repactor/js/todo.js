@@ -83,3 +83,14 @@ function clickClearHandler(e){
     todoList = [];
     saveTodo();
 }
+
+function clickResetHandler(){
+    const ul = document.querySelector('ul');
+    while(ul.hasChildNodes()){
+        ul.removeChild(ul.firstChild);
+    }
+    localStorage.removeItem('user');
+    localStorage.removeItem('todolist');
+    todoList = [];
+    saveTodo();
+}

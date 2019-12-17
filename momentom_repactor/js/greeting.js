@@ -30,10 +30,12 @@ function greetingSubmitHandler(e){
 
 function init(){
     const clear = document.querySelector('.clear');
+    const reset = document.querySelector('.reset');
     loadName();
     greetingForm.addEventListener('submit', greetingSubmitHandler);
     todoForm.addEventListener('submit', todoSubmitHandler);
     clear.addEventListener('click', clickClearHandler);
+    reset.addEventListener('click', clickResetHandler);
 };
 
 init();
