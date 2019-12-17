@@ -40,6 +40,12 @@ body{
     }
 
 
+    /* todo container */
+    .todo-container{
+        position: relative;
+    }
+
+
     /* todo-bar */
     .todo-bar{
         font-size : 2.2rem;
@@ -78,14 +84,14 @@ body{
     .todo-list span{
         display: inline-block;
         text-align: left;
-        width : 69vw;
+        width : 68vw;
         height: 100%;
         padding : 1.5vw 2.5vw;
     }
     .complete-btn{
         position: absolute;
         left : 0;
-        width : 11vw;
+        width : 12vw;
         height: 100%;
         background: transparent;
         border : none;
@@ -109,7 +115,7 @@ body{
         right : 2vw;
         border : none;
         background : transparent;
-        margin : 1rem;
+        margin : 1rem 0;
         font-family: 'Nanum Pen Script', cursive;
         font-size : 2.2rem;
         opacity: 0.5;
@@ -120,7 +126,7 @@ body{
         left : 2vw;
         border : none;
         background : transparent;
-        margin : 1rem;
+        margin : 1rem 0;
         font-family: 'Nanum Pen Script', cursive;
         font-size : 2.2rem;
         opacity: 0.5;
