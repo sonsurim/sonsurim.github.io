@@ -71,14 +71,14 @@ body{
     .todo-list span{
         display: inline-block;
         text-align: left;
-        width : 80%;
+        width : 77%;
         height: 100%;
-        padding : 2rem;
+        padding : 1rem;
     }
     .complete-btn{
         position: absolute;
         left : 0;
-        width : 15%;
+        width : 13%;
         height: 100%;
         background: transparent;
         border : none;
