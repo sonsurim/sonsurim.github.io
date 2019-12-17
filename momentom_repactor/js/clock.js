@@ -1,6 +1,5 @@
 (function(){
-const clockContainer = document.querySelector(".clock-container");
-const clockTitle = clockContainer.querySelector("h1");
+const clockTitle = document.querySelector('.clock');
 
 function getTime(){
     const date = new Date();
@@ -12,13 +11,13 @@ function timeSet(date){
     const minutes = date.getMinutes();
 
     if(hours < 12){
-        clockTitle.innerText = `${hours}:${minutes < 10? `0${minutes}`:minutes}`;
+        clockTitle.textContent = `(현재시각 : ${hours}:${minutes < 10? `0${minutes}`:minutes})`;
     }else if(hours === 12){
-        clockTitle.innerText = `${hours}:${minutes < 10? `0${minutes}`:minutes}`;
+        clockTitle.textContent = `(현재시각 : ${hours}:${minutes < 10? `0${minutes}`:minutes})`;
     }else{
         let currentHours = hours;
         currentHours = hours - 12;
-        clockTitle.innerText = `${currentHours}:${minutes < 10 ? `0${minutes}`:minutes}`;
+        clockTitle.textContent = `(현재시각 : ${currentHours}:${minutes < 10 ? `0${minutes}`:minutes})`;
     }
 }
 

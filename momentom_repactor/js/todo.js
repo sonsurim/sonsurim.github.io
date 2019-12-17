@@ -1,5 +1,5 @@
 const todoContainer = document.querySelector('.todo-container');
-const todoTitle = todoContainer.querySelector('p');
+const todoTitle = todoContainer.querySelector('.title');
 const todoForm = todoContainer.querySelector('form');
 const todoInput = todoContainer.querySelector('input');
 
@@ -25,9 +25,12 @@ function makeTodo(text){
     const li = document.createElement('li');
     const span = document.createElement('span');
     const completeBtn = document.createElement('button');
+    const completeSpan = document.createElement('span');
     const delBtn = document.createElement('button');
     completeBtn.addEventListener("click",clickCompleteHandler);
     completeBtn.classList.add('complete-btn');
+    completeSpan.classList.add('check');
+    completeBtn.appendChild(completeSpan);
     delBtn.addEventListener("click",clickDelHandler);
     delBtn.classList.add('delete-btn');
     li.dataset.id = todoList.length + 1;
@@ -52,9 +55,12 @@ function showTodo(text){
     const li = document.createElement('li');
     const span = document.createElement('span');
     const completeBtn = document.createElement('button');
+    const completeSpan = document.createElement('span');
     const delBtn = document.createElement('button');
     completeBtn.addEventListener("click",clickCompleteHandler);
     completeBtn.classList.add('complete-btn');
+    completeSpan.classList.add('check');
+    completeBtn.appendChild(completeSpan);
     delBtn.addEventListener("click",clickDelHandler);
     delBtn.classList.add('delete-btn');
     span.textContent = text;
@@ -71,10 +77,11 @@ function showTodo(text){
 function completeCheck(){
     const li = document.querySelectorAll('li');
     const btn = li[count].querySelector('button');
+    const check = btn.querySelector('.check');
     if(todoList[count].complete){
         if(todoList[count].complete){
             li[count].classList.add('complete');
-            btn.textContent = '✍';
+            check.textContent = '✍';
         }
     }
     count++;
@@ -112,14 +119,15 @@ function todoSubmitHandler(e){
 
 function clickCompleteHandler(e){
     const li = e.target.parentNode;
+    const check = e.target.querySelector('.check');
     if(!(todoList[li.dataset.id - 1].complete)){
         todoList[li.dataset.id - 1].complete =!(todoList[li.dataset.id - 1].complete);
         li.classList.add('complete');
-        e.target.textContent = '✍';
+        check.textContent = '✍';
     }else if(todoList[li.dataset.id - 1].complete){
         todoList[li.dataset.id - 1].complete =!(todoList[li.dataset.id - 1].complete);
         li.classList.remove('complete');
-        e.target.textContent = '';
+        check.textContent = '';
     }
     saveTodo();
 }
