@@ -7,7 +7,9 @@ let todoList = [];
 
 function loadTodo(){
     todoContainer.classList.remove('hide');
+    const currentUser = localStorage.getItem('user');
     const currentTodo = localStorage.getItem('todolist');
+    todoTitle.textContent = `${currentUser}님의 오늘의 할 일`;
     if(currentTodo !== null){
         const parseTodo = JSON.parse(currentTodo);
         parseTodo.forEach(function(toDo){
