@@ -27,8 +27,12 @@ body{
     }
 
     /* all */
+    .container{
+        width : 90vw;
+        margin: 0 auto;
+    }
     .title{
-        padding : 4rem 0 0 4rem;
+        padding : 8vw 0 0 2vw;
         font-size : 3rem;
     }
 
@@ -99,7 +103,7 @@ body{
     /* ect */
     .clear{
         position: absolute;
-        right : .3vw;
+        right : 2vw;
         border : none;
         background : transparent;
         margin : 1rem;
@@ -110,7 +114,7 @@ body{
     }
     .reset{
         position: absolute;
-        left : .3vw;
+        left : 2vw;
         border : none;
         background : transparent;
         margin : 1rem;
