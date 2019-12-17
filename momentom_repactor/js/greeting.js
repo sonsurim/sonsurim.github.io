@@ -36,12 +36,6 @@ function init(){
     todoForm.addEventListener('submit', todoSubmitHandler);
     clear.addEventListener('click', clickClearHandler);
     reset.addEventListener('click', clickResetHandler);
-    todoForm.addEventListener('keypress', function(e){
-        // enter key code is 13
-        if(e.keyCode === 13){
-            todoSubmitHandler();
-         }
-     })
 };
 
 init();
