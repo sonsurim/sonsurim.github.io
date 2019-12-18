@@ -5,133 +5,148 @@ body{
     background-color : #f6e58d;
     font-family: 'Nanum Pen Script', cursive;
 }
+input{
+    display: block;
+    border: none;
+    outline: none;
+}
+button{
+    padding : 0;
+}
+
+
+/* container */
+.container{
+    width : 90vw;
+    margin: 0 auto;
+}
+.todo-container{
+    position: relative;
+}
+
+
+/* todo-bar */
+.todo-bar{
+    position: relative;
+    width : 90vw;
+    padding-bottom : .5rem;
+    margin: 0 auto;
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+.todo-bar span:first-child{
+    position: absolute;
+    left: 2vw;
+}
+.todo-bar span:last-child{
+    position: absolute;
+    right : 2vw;
+}
+
+
+/* todolist */
+.todo-list{
+    position: relative;
+    width : 90vw;
+    height : 100%;
+    margin : 0 auto;
+}
+.todo-list li{
+    display: block;
+    position: relative;
+    width : 100%;
+    min-height : 10vw;
+    border-bottom : 1px solid black;
+    text-align: center;
+}
+.todo-list li > span{
+    display: inline-block;
+    width : 70vw;
+    min-height: 10vw;
+    padding : 3vw 0 3vw 2.5vw;
+    text-align: left;
+}
+.todo-list .complete-btn{
+    position: absolute;
+    left : 0;
+    width : 10vw;
+    height: 100%;
+    border : none;
+    border-right : 1px solid red;
+    -webkit-outline: none;
+    outline: none;
+    background: transparent;
+}
+.todo-list .delete-btn{
+    position: absolute;
+    right : 0;
+    width : 10vw;
+    height : 100%;
+    border : none;
+    -webkit-outline: none;
+    outline : none;
+    background: transparent;
+}
+
+
+
+/* ect */
+.title{
+    display : inline-block;
+    padding : 10vw 0 0 2vw;
+}
+.clear{
+    position: absolute;
+    opacity: 0.5;
+    right : 2vw;
+    margin : 1rem 0;
+    border : none;
+    outline: none;
+    background : transparent;
+    font-family: 'Nanum Pen Script', cursive;
+}
+.reset{
+    position: absolute;
+    opacity: 0.5;
+    left : 2vw;
+    margin : 1rem 0;
+    border : none;
+    outline: none;
+    background : transparent;
+    font-family: 'Nanum Pen Script', cursive;
+}
 
 
 /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
 @media all and (max-width:767px) {
     /* common */
     body{
-        font-size : 2.2rem;
+        font-size : 2rem;
     }
     input{
-        display: block;
         width : 85vw;
         height : 7vw;
         padding : 1rem;
         margin : 1.5rem auto 2.5rem auto;
-        border: none;
-        outline: none;
         font-size: 1.5rem;
     }
     button{
-        padding : 0;
-    }
-
-
-    /* container */
-    .container{
-        width : 90vw;
-        margin: 0 auto;
-    }
-    .todo-container{
-        position: relative;
-    }
-
-
-    /* todo-bar */
-    .todo-bar{
-        position: relative;
-        width : 90vw;
-        padding-bottom : .5rem;
-        margin: 0 auto;
-        border-bottom: 2px solid black;
         font-size : 2rem;
-        text-align: center;
-    }
-    .todo-bar span:first-child{
-        position: absolute;
-        left: 2vw;
-    }
-    .todo-bar span:last-child{
-        position: absolute;
-        right : 2vw;
     }
 
 
     /* todolist */
-    .todo-list{
-        position: relative;
-        width : 90vw;
-        height : 100%;
-        margin : 0 auto;
-    }
-    .todo-list li{
-        display: block;
-        position: relative;
-        width : 100%;
-        min-height : 10vw;
-        border-bottom : 1px solid black;
-        text-align: center;
-    }
-    .todo-list li > span{
-        display: inline-block;
-        width : 70vw;
-        height: 100%;
-        padding : 1.5vw 0 1.5vw 2.5vw;
-        text-align: left;
-    }
-    .todo-list .complete-btn{
-        position: absolute;
-        left : 0;
-        width : 10vw;
-        height: 100%;
-        border : none;
-        border-right : 1px solid red;
-        -webkit-outline: none;
-        outline: none;
-        background: transparent;
-        font-size : 2.1rem;
+    .todo-list li span{
+        font-size : 2.2rem;
     }
     .todo-list .delete-btn{
-        position: absolute;
-        right : 0;
-        width : 10vw;
-        height : 100%;
-        border : none;
-        -webkit-outline: none;
-        outline : none;
-        background: transparent;
+        font-size : 1.4rem;
     }
-
 
 
     /* ect */
     .title{
-        display : inline-block;
-        padding : 8vw 0 0 2vw;
         font-size : 3rem;
-    }
-    .clear{
-        position: absolute;
-        opacity: 0.5;
-        right : 2vw;
-        margin : 1rem 0;
-        border : none;
-        outline: none;
-        background : transparent;
-        font-family: 'Nanum Pen Script', cursive;
-        font-size : 2rem;
-    }
-    .reset{
-        position: absolute;
-        opacity: 0.5;
-        left : 2vw;
-        margin : 1rem 0;
-        border : none;
-        outline: none;
-        background : transparent;
-        font-family: 'Nanum Pen Script', cursive;
-        font-size : 2rem;
     }
 
 }
@@ -139,12 +154,111 @@ body{
 
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
 @media all and (min-width:768px) and (max-width:1023px) {
+    /* common */
+    body{
+        font-size : 2.6rem;
+    }
+    input{
+        width : 85vw;
+        height : 9vw;
+        padding : 0 2rem;
+        margin : 2rem auto 5rem auto;
+        font-size: 2rem;
+    }
+    button{
+        font-size : 2.6rem;
+    }
+
+
+    /* todolist */
+    .todo-list li span{
+        font-size : 3.2rem;
+    }
+    .todo-list .delete-btn{
+        font-size : 1.8rem;
+    }
+
+
+    /* ect */
+    .title{
+        font-size : 4.2rem;
+    }
 
 }
 
 
 /* PC (해상도 1024px)*/
 @media all and (min-width:1024px) {
+    /* common */
+    body{
+        font-size : 2.2rem;
+    }
+    input{
+        width : 45vw;
+        height : 4vw;
+        padding : 0 2rem;
+        margin : 2rem auto 5rem auto;
+        font-size: 1.6rem;
+    }
+    button{
+        font-size : 2.2rem;
+    }
+
+    /* container */
+    .container{
+        width : 50vw;
+    }
+
+    /* todobar */
+    .todo-bar{
+        width : 50vw;
+    }
+    .todo-bar span:first-child{
+        left : .8vw;
+    }
+    .todo-bar span:last-child{
+        right : .8vw;
+    }
+
+
+    /* todolist */
+    .todo-list{
+        width : 50vw;
+    }
+    .todo-list li{
+        min-height: 1vw;
+    }
+    .todo-list li > span{
+        width : 84%;
+        min-height: 1vw;
+        padding : .7vw 0 .7vw 1.4vw;
+        font-size : 2.4rem;
+    }
+    .todo-list .complete-btn{
+        width : 8%;
+        cursor: pointer;
+    }
+    .todo-list .delete-btn{
+        width : 8%;
+        cursor: pointer;
+        font-size : 1.6rem;
+    }
+
+
+    /* ect */
+    .title{
+        display: block;
+        width : 20vw;
+        padding : 0;
+        margin : 5vw auto 0 auto;
+        font-size : 3.6rem;
+    }
+    .clear{
+        right : 1vw;
+    }
+    .reset{
+        left : 1vw;
+    }
 
 }
 
