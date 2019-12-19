@@ -5,10 +5,9 @@
     box-sizing: border-box;
 }
 body {
-    font-family: 'Apple SD Gothic Neo',arial,sans-serif;
+    overflow: hidden;
     font-size : 13px;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    font-family: 'Apple SD Gothic Neo',arial,sans-serif;
 }
 
 
@@ -22,7 +21,7 @@ body {
 header {
     height : 89px;
 }
-.header-wrapper {
+.header-container {
     display : flex;
     justify-content: flex-end;
     position: relative;
@@ -37,13 +36,13 @@ header {
     margin-top : 8px;
 }
 .header-item:nth-child(3){
-    margin-top : 6px;
+    margin-top : 8px;
 }
 .header-item i {
+    opacity: .6;
+    cursor: pointer;
     color: rgba(0, 0, 0, 0.87);
     font-size : 1rem;
-    cursor: pointer;
-    opacity: .6;
 }
 .header-item i:hover {
     opacity: .85;
@@ -64,64 +63,65 @@ header {
 }
 .header-login {
     display : inline-block;
-    background: -webkit-linear-gradient(top,#4387fd,#4683ea);
-    color : white !important;
-    font-weight: bold;
+    padding: 7px 10px;
     border: 1px solid #4285f4;
     border-radius: 2px;
-    padding: 7px 10px;
+    background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+    background: linear-gradient(top,#4387fd,#4683ea);
+    color : white !important;
+    font-weight: bold;
     text-decoration: none !important;
 }
 
 
 /* modal */
 .modal-top-border {
-    border-color: transparent;
+    position: absolute;
+    top: 19px;
+    left: -6.5px;
     border-style: dashed dashed solid;
     border-width: 0 8px 8px;
-    position: absolute;
-    left: -6.5px;
+    border-color: transparent;
     border-bottom-color: rgba(0,0,0,.2);
-    top: 19px;
 }
 .modal-top {
-    border-color: transparent;
-    border-bottom-color: #fff;
+    position: absolute;
+    z-index: 2;
+    top: 20px;
+    left: -6.5px;
     border-style: dashed dashed solid;
     border-width: 0 8px 8px;
-    position: absolute;
-    left: -6.5px;
-    top: 20px;
-    z-index: 2;
+    border-color: transparent;
+    border-bottom-color: #fff;
 }
 .modal-content-border {
-    border: 1px solid #ccc;
-    border-color: rgba(0,0,0,.2);
-    box-shadow: 0 2px 10px rgba(0,0,0,.2);
-    overflow: hidden;
     position: absolute;
     top: 27px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-color: rgba(0,0,0,.2);
     border-radius: 2px;
+    box-shadow: 0 2px 10px rgba(0,0,0,.2);
 }
 .modal-content {
+    overflow-y: scroll;
     width : 322px;
     max-height: 522px;
-    overflow-y: scroll;
     left : -230px;
     z-index: 1;
     background-color : #fff;
 }
 .modal-ul {
-    width: 322px;
-    background: #fff;
-    padding: 28px 28px 28px 27px;
     display : inline-block;
+    width: 322px;
+    padding: 28px 28px 28px 27px;
+    background: #fff;
 }
 .modal-li {
+    display: inline-block;
     width: 86px;
     height: 98px;
     padding: 1px;
-    display: inline-block;
     color: black;
     text-align: center;
 }
@@ -130,32 +130,32 @@ header {
     text-decoration: none;
 }
 .modal-img {
+    display: inline-block;
     width: 64px;
     height: 64px;
-    display: inline-block;
     vertical-align: top;
 }
 .modal-text {
     display: block;
-    line-height: 20px;
     overflow: hidden;
-    white-space: nowrap;
     width: 84px;
     text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 20px;
 }
 .modal-line{
     position: absolute;
-    border-bottom: 1px solid #ebebeb;
     left: 28px;
     width: 264px;
+    border-bottom: 1px solid #ebebeb;
 }
 .modal-ect{
+    display: inline-block;
     position: relative;
     left : 28px;
     width : 264px;
-    line-height: 40px;
     text-align: center;
-    display: inline-block;
+    line-height: 40px;
 }
 
 
@@ -246,42 +246,43 @@ main {
 main > img {
     display : block;
     width : 272px;
-    margin : 0 auto;
-    margin-bottom: 25px;
+    margin : 0 auto 25px auto;
 }
 .main-button {
     margin-top: 18px;
 }
 .main-button > form > input {
     height: 36px;
-    background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
-    background-color: #f2f2f2;
-    border: 1px solid #f2f2f2;
-    border-radius: 4px;
-    color: #5F6368;
-    cursor: pointer;
-    font-size: 14px;
     margin: 11px 4px;
-    line-height: 27px;
     padding: 0 16px;
     outline: none;
+    cursor: pointer;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+    background-image: linear-gradient(top,#f5f5f5,#f1f1f1);
+    color: #5F6368;
+    font-size: 14px;
+    line-height: 27px;
 }
 .main-button > form > input:hover {
-    background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
-    background-color: #f8f8f8;
-    border: 1px solid #c6c6c6;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
-    color: #222;
     outline: none;
+    border: 1px solid #c6c6c6;
+    background-color: #f8f8f8;
+    background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+    background-image: linear-gradient(top,#f8f8f8,#f1f1f1);
+    color: #222;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 }
 
 
 /* search */
 .search-container {
     display: inline-flex;
+    width : 582px;
     border: 1px solid #dfe1e5;
     border-radius: 24px;
-    width : 582px;
 }
 .search-container:hover {
     border-color: rgba(223,225,229,0);
@@ -293,14 +294,14 @@ main > img {
 .search > form > input {
     width : 474px;
     height: 34px;
-    font: bold 16px 굴림,dotum,arial,sans-serif;
-    line-height: 34px;
-    background-color: transparent;
-    border: none;
     margin: 4px 0 0 20px;
-    color: rgba(0,0,0,.87);
-    word-wrap: break-word;
     outline : none;
+    border: none;
+    background-color: transparent;
+    color: rgba(0,0,0,.87);
+    font: bold 16px 굴림,dotum,arial,sans-serif;
+    word-wrap: break-word;
+    line-height: 34px;
 }
 .search-item {
     display : flex;
@@ -311,111 +312,111 @@ main > img {
     padding : 0 8px;
 }
 .keybord-item {
-    background: url(//www.gstatic.com/inputtools/images/tia.png) no-repeat center;
+    position: relative;
+    cursor: pointer;
     height: 24px;
     width: 24px;
-    cursor: pointer;
-    position: relative;
+    background: url(//www.gstatic.com/inputtools/images/tia.png) no-repeat center;
 }
 .keybord-item p {
     visibility: hidden;
 }
 .keybord-item:hover p{
     visibility: visible;
-    font-size : 11px;
-    font-weight: bold;
-    text-align: center;
-    width : 70px;
-    padding : 7px;
     position : absolute;
     top : 37px;
     left : -21px;
-    background-color: rgba(0,0,0,.8);
-    color : #fff;
+    width : 70px;
+    padding : 7px;
     border : 1px solid #fff;
     box-shadow: 1px 1px 6px 1px rgba(32,33,36,0.28);
+    background-color: rgba(0,0,0,.8);
+    font-size : 11px;
+    font-weight: bold;
+    text-align: center;
+    color : #fff;
 }
 .keybord-item:hover p:after {
-    content: '';
-	position: absolute;
+	display: block;
+    position: absolute;
 	top: -5px;
 	left: 28px;
 	border-style: solid;
 	border-width: 0 5px 5px;
 	border-color: rgba(0,0,0,.8) transparent;
-	display: block;
+    content: '';
 }
 .search-item-voice {
     display : flex;
-    align-items: center;
     padding : 0 8px;
+    align-items: center;
 }
 .voice-item {
-    background: url(//www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png) 0 0 no-repeat;
+    position: relative;
+    cursor: pointer;
     height: 24px;
     width: 24px;
     background-size: 24px;
-    cursor: pointer;
-    position: relative;
+    background: url(//www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png) 0 0 no-repeat;
 }
 .voice-item p{
     visibility: hidden;
 }
 .voice-item:hover p{
     visibility: visible;
-    font-size : 11px;
-    font-weight: bold;
-    text-align: center;
-    width : 70px;
-    padding : 7px;
     position : absolute;
     top : 37px;
     right : -24px;
-    background-color: rgba(0,0,0,.8);
-    color : #fff;
+    width : 70px;
+    padding : 7px;
     border : 1px solid #fff;
     box-shadow: 1px 1px 6px 1px rgba(32,33,36,0.28);
+    background-color: rgba(0,0,0,.8);
+    font-size : 11px;
+    font-weight: bold;
+    text-align: center;
+    color : #fff;
 }
 .voice-item:hover p:after {
-    content: '';
-	position: absolute;
+	display: block;
+    position: absolute;
+	top: -5px;
+	right: 30px;
 	border-style: solid;
 	border-width: 0 5px 5px;
 	border-color: rgba(0,0,0,.8) transparent;
-	display: block;
-	top: -5px;
-	right: 30px;
+    content: '';
 }
 
 
 /* footer */
 footer {
+    position: absolute;
+    bottom : 0;
     width : 100%;
     height: 82px;
     border-top : 1px solid #e4e4e4;
     background-color: #F2F2F2;
-    position: absolute;
-    bottom : 0;
 }
 .footer-adress {
-    font-size : 15px;
-    color: rgba(0,0,0,.54);
-    line-height: 40px;
-    border-bottom : 1px solid #e4e4e4;
     padding: 0 0 1px 30px;
+    border-bottom : 1px solid #e4e4e4;
+    font-size : 15px;
+    line-height: 40px;
+    color: rgba(0,0,0,.54);
 }
-.footer-wrapper {
+.footer-container {
     display : flex;
     justify-content: space-between;
     padding-left: 3px;
     font-size : 0;
 }
 .footer-item a {
-    font-size : 13px;
-    color: #5f6368;
-    line-height: 40px;
-    text-decoration: none;
     padding-left: 27px;
+    font-size : 13px;
+    text-decoration: none;
+    line-height: 40px;
+    color: #5f6368;
 }
 .footer-item a:hover {
     text-decoration: underline;

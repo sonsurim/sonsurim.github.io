@@ -1,19 +1,15 @@
 (function serach(){
-
-    const SHADOW_CN = "js-shadow";
-
-    const searchContainer = document.getElementById('js-search');
+    const searchContainer = document.querySelector('.search-container');
     const searchForm = document.getElementById('js-form');
     const searchInput = searchForm.querySelector('input');
-
     const searchBtnForm = document.getElementById('js-btn');
     const searchBtn = document.querySelector('input');
 
     document.addEventListener('click',function(e){
         if(e.target === searchInput){
-            searchContainer.classList.add(SHADOW_CN);
+            searchContainer.classList.add('js-shadow');
         }else{
-            searchContainer.classList.remove(SHADOW_CN);
+            searchContainer.classList.remove('js-shadow');
         }
     });
 

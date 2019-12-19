@@ -1,12 +1,10 @@
 (function modal(){
-
-    const SHOWING_CN = "js-showing";
-
     const modalIcon = document.getElementById('js-modal-icon');
     const modal = document.getElementById('js-modal');
+    const SHOWING_CN = "js-showing";
 
     let visible = false;
-    console.log(visible);
+
     document.addEventListener('click',function onoff(e){
         if(e.target === modalIcon){
             visible = !visible;
