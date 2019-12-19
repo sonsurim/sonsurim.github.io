@@ -46,9 +46,7 @@ function stopPainting(){
 
 
 function colorClickHandler(e){
-    // css로 가져오게끔 변경해야됨
     const color = e.target.style.backgroundColor;
-    console.log(e.target);
     ctx.strokeStyle = color;
     ctx.fillStyle = color;
 }
@@ -61,10 +59,10 @@ function rangeChangeHandler(event){
 function modeClickHandler(){
     if(filling === true){
         filling = false;
-        mode.innerText = "Fill";
+        mode.innerText = "FILL";
     }else{
         filling = true;
-        mode.innerText = "Paint";
+        mode.innerText = "PAINT";
     }
 
 }
