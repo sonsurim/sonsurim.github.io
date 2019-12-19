@@ -1,5 +1,11 @@
-html, body, h1, h2, h3, h4, h5, h6, p, blockquote, code, img, dl, dt, dd, ol, ul, li, fieldset, legend, caption { margin: 0; padding: 0; border: 0; }
-div, span, article, section, header, footer, p, ul, li, fieldset, legend, label, a, nav { box-sizing: border-box; }
+html, body, h1, h2, h3, h4, h5, h6, p, blockquote, code, img, dl, dt, dd, ol, ul, li, fieldset, legend, caption {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+div, span, article, section, header, footer, p, ul, li, fieldset, legend, label, a, nav {
+	box-sizing: border-box;
+}
 html {
     height: 100%;
 }
@@ -27,8 +33,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-ol,
-ul {
+ol, ul {
 	list-style: none;
 }
 table {
