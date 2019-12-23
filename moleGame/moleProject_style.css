@@ -1,0 +1,290 @@
+@import url('../3dScroll/css/reset.css');
+
+/* Font */
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+/* Common */
+body{
+    overflow: hidden;
+    background : #333;
+    font-family: 'Press Start 2P', cursive;
+}
+
+
+/* container */
+.container{
+    width : 100vw;
+}
+
+/* title */
+.title{
+    margin: 10vw 0 5vw 0;
+    font-size: 2.6rem;
+    text-align: center;
+    color: #F5F876;
+}
+
+/* Modal */
+.modal{
+    display: none;
+    position: absolute;
+    background: #333;
+    z-index : 3;
+    color : #fff;
+    font-size : 1.8rem;
+    user-select: none;
+}
+.modal p:nth-child(1){
+    line-height: 2.5rem;
+}
+.modal-count{
+    color: #F5F876;
+    font-size: 2.5rem;
+    margin-top: -.4rem;
+}
+
+
+/* Hole */
+.hole-container{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width : 84vw;
+    height : 84vw;
+    margin: 0 auto;
+}
+.hole{
+    position: relative;
+    width : 28vw;
+    height : 28vw;
+    background-image : url(img/hole.jpg);
+    background-size : contain;
+}
+.hole:nth-child(2){
+    border-radius : 4vw 0 0 0;
+}
+.hole:nth-child(4){
+    border-radius : 0 4vw 0 0;
+}
+.hole:nth-child(8){
+    border-radius : 0 0 0 4vw;
+}
+.hole:nth-child(10){
+    border-radius : 0 0 4vw 0;
+}
+
+
+/* Mole */
+.mole{
+    display : none;
+    position: relative;
+    z-index : 2 !important;
+    top : -.8vw;
+    width : 8vw !important;
+    height : 8vw !important;
+    cursor: pointer;
+    animation: shake 0.6s;
+    animation-iteration-count: infinite;
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+
+/* Start button */
+.btn-container{
+    width : 24vw;
+    height : 10vw;
+    margin-top : 1.5vw;
+    border-radius: 1vw;
+    background : #4F4D4F;
+    text-align: center;
+}
+.point{
+    margin-top : 2vw;
+    /* font-size : 1rem; */
+    font-weight: bold;
+    color : #fff;
+}
+.count{
+    margin-left: 1vw;
+    color : #F5F876;
+}
+.start-btn{
+    display: block;
+    cursor: pointer;
+    width : 18vw;
+    height : 4vw;
+    /* min-width : 18vw; */
+    margin : 1.5vw auto;
+    outline : none;
+    border : none;
+    border-radius: .8vw;
+    background: #333;
+    font-family: 'Press Start 2P', cursive;
+    color : #fff;
+}
+.start-btn:hover{
+    color: #F5F876;
+}
+.btn-active{
+    cursor : auto !important;
+    color : #3E3F41 !important;
+}
+
+
+/*
+------------------------------
+-----------public-------------
+------------------------------
+ */
+
+
+ @media all and (min-width:1024px) {
+     /* container */
+.container{
+    width : 100vw;
+}
+
+/* title */
+.title{
+    margin: 4vw 0 2vw 0;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #F5F876;
+}
+
+/* Modal */
+.modal{
+    display: none;
+    position: absolute;
+    background: #333;
+    z-index : 3;
+    color : #fff;
+    font-size : 1.8rem;
+    user-select: none;
+}
+.modal p:nth-child(1){
+    line-height: 2.5rem;
+}
+.modal-count{
+    color: #F5F876;
+    font-size: 2.5rem;
+    margin-top: -.4rem;
+}
+
+
+/* Hole */
+.hole-container{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width : 90vw;
+    height : 90vw;
+    margin: 0 auto;
+}
+.hole{
+    position: relative;
+    width : 30vw;
+    height : 30vw;
+    background-image : url(img/hole.jpg);
+    background-size : contain;
+}
+.hole:nth-child(2){
+    border-radius : 2vw 0 0 0;
+}
+.hole:nth-child(4){
+    border-radius : 0 2vw 0 0;
+}
+.hole:nth-child(8){
+    border-radius : 0 0 0 2vw;
+}
+.hole:nth-child(10){
+    border-radius : 0 0 2vw 0;
+}
+
+
+/* Mole */
+.mole{
+    display : none;
+    position: relative;
+    z-index : 2 !important;
+    top : -.8vw;
+    width : 8vw !important;
+    height : 8vw !important;
+    cursor: pointer;
+    animation: shake 0.6s;
+    animation-iteration-count: infinite;
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+
+/* Start button */
+.btn-container{
+    width : 24vw;
+    height : 10vw;
+    margin-top : 1.5vw;
+    border-radius: 1vw;
+    background : #4F4D4F;
+    text-align: center;
+}
+.point{
+    margin-top : 2vw;
+    /* font-size : 1rem; */
+    font-weight: bold;
+    color : #fff;
+}
+.count{
+    margin-left: 1vw;
+    color : #F5F876;
+}
+.start-btn{
+    display: block;
+    cursor: pointer;
+    width : 18vw;
+    height : 4vw;
+    /* min-width : 18vw; */
+    margin : 1.5vw auto;
+    outline : none;
+    border : none;
+    border-radius: .8vw;
+    background: #333;
+    font-family: 'Press Start 2P', cursive;
+    color : #fff;
+}
+.start-btn:hover{
+    color: #F5F876;
+}
+.btn-active{
+    cursor : auto !important;
+    color : #3E3F41 !important;
+}
+ }
+
+/* JS */
+.active{
+    display : block !important;
+}
+ /* end JS */
