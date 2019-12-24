@@ -8,20 +8,6 @@ let ranNum;
 let preNum;
 let moleNum;
 
-function setMole(){
-    const holeContainer = document.querySelector('.hole-container');
-    for(let i = 0; i < 9; i++){
-        const div = document.createElement('div');
-        const img = document.createElement('img');
-        img.src = 'img/mole.png';
-        img.id = i;
-        img.classList.add('mole');
-        div.appendChild(img);
-        div.classList.add('hole');
-        holeContainer.appendChild(div);
-    }
-}
-
 function catchMole() {
     moleAgain();
     clearTimeout(missMole);
@@ -70,6 +56,20 @@ function getRanNum() {
         return getRanNum();
     }
 };
+
+function setMole(){
+    const holeContainer = document.querySelector('.hole-container');
+    for(let i = 0; i < 9; i++){
+        const div = document.createElement('div');
+        const img = document.createElement('img');
+        img.src = 'img/mole.png';
+        img.id = i;
+        img.classList.add('mole');
+        div.appendChild(img);
+        div.classList.add('hole');
+        holeContainer.appendChild(div);
+    }
+}
 
 function moleAgain(){
     if(turn === 10){
