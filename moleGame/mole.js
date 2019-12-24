@@ -40,6 +40,7 @@ function modalPop(){
     const modalCount = modal.querySelector('.modal-count');
     modalCount.textContent = `${count}0`;
     modal.classList.add('active');
+
     setTimeout(function(){
         modal.classList.remove('active');
         countReset();
@@ -61,12 +62,14 @@ function moleAgain(){
         isPlay = false;
         moleInactive(moleNum);
         clearTimeout(missMole);
+
         setTimeout(function(){
             modalPop();
         }, 800)
     }else{
         moleInactive(moleNum);
         clearTimeout(missMole);
+
         setTimeout(function(){
             startGame();
         }, 1000);

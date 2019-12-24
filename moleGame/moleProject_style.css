@@ -1,12 +1,14 @@
-@import url('../3dScroll/css/reset.css');
-
-/* Font */
+@import url('../todolist/css/reset.css');
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
 
-/* Common */
+
+/* public Common */
 body{
     overflow: hidden;
     background : #333;
+    font-family: 'Press Start 2P', cursive;
+}
+button{
     font-family: 'Press Start 2P', cursive;
 }
 
@@ -14,124 +16,74 @@ body{
 /* container */
 .container{
     width : 100vw;
+    height : 100vw;
+    margin: 0 auto;
+    text-align: center;
 }
 
 /* title */
 .title{
-    margin: 10vw 0 5vw 0;
-    font-size: 2.6rem;
-    text-align: center;
     color: #F5F876;
 }
 
-/* Modal */
+/* modal */
 .modal{
     display: none;
     position: absolute;
-    background: #333;
-    z-index : 3;
-    color : #fff;
-    font-size : 1.8rem;
     user-select: none;
+    z-index : 3;
+    background: #333;
+    color : #fff;
 }
-.modal p:nth-child(1){
-    line-height: 2.5rem;
+.modal p{
+    margin: 0 auto;
 }
 .modal-count{
     color: #F5F876;
-    font-size: 2.5rem;
-    margin-top: -.4rem;
 }
 
 
-/* Hole */
+/* hole */
 .hole-container{
     display: flex;
-    flex-wrap: wrap;
     position: relative;
-    width : 84vw;
-    height : 84vw;
+    flex-wrap: wrap;
     margin: 0 auto;
 }
 .hole{
     position: relative;
-    width : 28vw;
-    height : 28vw;
     background-image : url(img/hole.jpg);
     background-size : contain;
 }
-.hole:nth-child(2){
-    border-radius : 4vw 0 0 0;
-}
-.hole:nth-child(4){
-    border-radius : 0 4vw 0 0;
-}
-.hole:nth-child(8){
-    border-radius : 0 0 0 4vw;
-}
-.hole:nth-child(10){
-    border-radius : 0 0 4vw 0;
-}
 
 
-/* Mole */
+/* mole */
 .mole{
     display : none;
     position: relative;
     z-index : 2 !important;
-    top : -.8vw;
-    width : 8vw !important;
-    height : 8vw !important;
     cursor: pointer;
-    animation: shake 0.6s;
-    animation-iteration-count: infinite;
+    animation: shake 0.6s infinite;
 }
-@keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
-  }
 
 
-/* Start button */
+/* btn-container */
 .btn-container{
-    width : 24vw;
-    height : 10vw;
-    margin-top : 1.5vw;
-    border-radius: 1vw;
     background : #4F4D4F;
     text-align: center;
 }
-.point{
-    margin-top : 2vw;
-    /* font-size : 1rem; */
+.btn-container p{
     font-weight: bold;
     color : #fff;
 }
-.count{
-    margin-left: 1vw;
+.btn-container .count{
     color : #F5F876;
 }
 .start-btn{
-    display: block;
     cursor: pointer;
-    width : 18vw;
-    height : 4vw;
-    /* min-width : 18vw; */
-    margin : 1.5vw auto;
     outline : none;
     border : none;
-    border-radius: .8vw;
     background: #333;
-    font-family: 'Press Start 2P', cursive;
     color : #fff;
 }
 .start-btn:hover{
@@ -143,148 +95,267 @@ body{
 }
 
 
-/*
-------------------------------
------------public-------------
-------------------------------
- */
-
-
- @media all and (min-width:1024px) {
-     /* container */
-.container{
-    width : 100vw;
-}
-
-/* title */
-.title{
-    margin: 4vw 0 2vw 0;
-    font-size: 1.4rem;
-    text-align: center;
-    color: #F5F876;
-}
-
-/* Modal */
-.modal{
-    display: none;
-    position: absolute;
-    background: #333;
-    z-index : 3;
-    color : #fff;
-    font-size : 1.8rem;
-    user-select: none;
-}
-.modal p:nth-child(1){
-    line-height: 2.5rem;
-}
-.modal-count{
-    color: #F5F876;
-    font-size: 2.5rem;
-    margin-top: -.4rem;
-}
-
-
-/* Hole */
-.hole-container{
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    width : 90vw;
-    height : 90vw;
-    margin: 0 auto;
-}
-.hole{
-    position: relative;
-    width : 30vw;
-    height : 30vw;
-    background-image : url(img/hole.jpg);
-    background-size : contain;
-}
-.hole:nth-child(2){
-    border-radius : 2vw 0 0 0;
-}
-.hole:nth-child(4){
-    border-radius : 0 2vw 0 0;
-}
-.hole:nth-child(8){
-    border-radius : 0 0 0 2vw;
-}
-.hole:nth-child(10){
-    border-radius : 0 0 2vw 0;
-}
-
-
-/* Mole */
-.mole{
-    display : none;
-    position: relative;
-    z-index : 2 !important;
-    top : -.8vw;
-    width : 8vw !important;
-    height : 8vw !important;
-    cursor: pointer;
-    animation: shake 0.6s;
-    animation-iteration-count: infinite;
-}
-@keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
-  }
-
-
-/* Start button */
-.btn-container{
-    width : 24vw;
-    height : 10vw;
-    margin-top : 1.5vw;
-    border-radius: 1vw;
-    background : #4F4D4F;
-    text-align: center;
-}
-.point{
-    margin-top : 2vw;
-    /* font-size : 1rem; */
-    font-weight: bold;
-    color : #fff;
-}
-.count{
-    margin-left: 1vw;
-    color : #F5F876;
-}
-.start-btn{
-    display: block;
-    cursor: pointer;
-    width : 18vw;
-    height : 4vw;
-    /* min-width : 18vw; */
-    margin : 1.5vw auto;
-    outline : none;
-    border : none;
-    border-radius: .8vw;
-    background: #333;
-    font-family: 'Press Start 2P', cursive;
-    color : #fff;
-}
-.start-btn:hover{
-    color: #F5F876;
-}
-.btn-active{
-    cursor : auto !important;
-    color : #3E3F41 !important;
-}
- }
-
-/* JS */
+/* js */
 .active{
     display : block !important;
 }
- /* end JS */
+
+
+/* animation */
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
+@media all and (max-width:767px) {
+    /* title */
+    .title{
+        margin: 24vw 0 6vw 0;
+        font-size: 2.4rem;
+    }
+
+    /* modal */
+    .modal{
+        top : 10vw;
+        left : 10vw;
+        width : 58vw;
+        height : 58vw;
+        border-radius: 5vw;
+    }
+    .modal p{
+        width : 30vw;
+    }
+    .modal p:first-child{
+        margin-top : 14vw;
+        font-size : 2.2rem;
+        line-height: 3.2rem;
+    }
+    .modal-count{
+        margin-top : 4vw !important;
+        font-size: 3.4rem;
+    }
+
+
+    /* hole */
+    .hole-container{
+        width : 78vw;
+        height : 78vw;
+    }
+    .hole{
+        width : 26vw;
+        height : 26vw;
+    }
+    .hole:nth-child(2){
+        border-radius : 5vw 0 0 0;
+    }
+    .hole:nth-child(4){
+        border-radius : 0 5vw 0 0;
+    }
+    .hole:nth-child(8){
+        border-radius : 0 0 0 5vw;
+    }
+    .hole:nth-child(10){
+        border-radius : 0 0 5vw 0;
+    }
+
+
+    /* mole */
+    .mole{
+        top : -2vw;
+        width : 25vw !important;
+        height : 25vw !important;
+    }
+
+
+    /* btn-container */
+    .btn-container{
+        width : 85vw;
+        height : 35vw;
+        margin : 6vw auto 0 auto;
+        border-radius: 3vw;
+    }
+    .btn-container p{
+        padding-top: 8vw;
+        font-size : 1.8rem;
+    }
+    .start-btn{
+        width : 70vw;
+        height : 12vw;
+        margin-top : 5vw;
+        border-radius: 2vw;
+        font-size : 1.5rem;
+    }
+}
+
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
+@media all and (min-width:768px) and (max-width:1023px) {
+    /* title */
+    .title{
+        margin: 10vw 0 5vw 0;
+        font-size: 3.6rem;
+    }
+
+    /* modal */
+    .modal{
+        top : 9vw;
+        left : 9vw;
+        width : 51vw;
+        height : 51vw;
+        border-radius: 5vw;
+    }
+    .modal p{
+        width : 25vw;
+    }
+    .modal p:first-child{
+        margin-top : 13vw;
+        font-size : 3.6rem;
+        line-height: 5rem;
+    }
+    .modal-count{
+        margin-top : 4vw !important;
+        font-size: 6rem;
+    }
+
+
+    /* hole */
+    .hole-container{
+        width : 69vw;
+        height : 69vw;
+    }
+    .hole{
+        width : 23vw;
+        height : 23vw;
+    }
+    .hole:nth-child(2){
+        border-radius : 5vw 0 0 0;
+    }
+    .hole:nth-child(4){
+        border-radius : 0 5vw 0 0;
+    }
+    .hole:nth-child(8){
+        border-radius : 0 0 0 5vw;
+    }
+    .hole:nth-child(10){
+        border-radius : 0 0 5vw 0;
+    }
+
+
+    /* mole */
+    .mole{
+        top : -1.7vw;
+        width : 22vw !important;
+        height : 22vw !important;
+    }
+
+
+    /* btn-container */
+    .btn-container{
+        width : 78vw;
+        height : 28vw;
+        margin : 5vw auto 0 auto;
+        border-radius: 3vw;
+    }
+    .btn-container p{
+        padding-top: 5vw;
+        font-size : 2.7rem;
+    }
+    .start-btn{
+        width : 65vw;
+        height : 12vw;
+        margin-top : 5vw;
+        border-radius: 2vw;
+        font-size : 2.5rem;
+    }
+}
+
+/* PC (해상도 1024px)*/
+@media all and (min-width:1024px) {
+    /* title */
+    .title{
+        margin: 3.5vw 0 2vw 0;
+        font-size: 2.4rem;
+    }
+
+    /* modal */
+    .modal{
+        top : 6vw;
+        left : 4vw;
+        width : 16vw;
+        height : 12vw;
+        padding : 2.4vw 0;
+        border-radius: 1vw;
+    }
+    .modal p{
+        width : 10vw;
+    }
+    .modal p:first-child{
+        font-size : 1.8rem;
+        line-height: 2.4rem;
+    }
+    .modal-count{
+        margin-top : 1vw !important;
+        font-size: 2.6rem;
+    }
+
+
+    /* hole */
+    .hole-container{
+        width : 24vw;
+        height : 24vw;
+    }
+    .hole{
+        width : 8vw;
+        height : 8vw;
+    }
+    .hole:nth-child(2){
+        border-radius : 2vw 0 0 0;
+    }
+    .hole:nth-child(4){
+        border-radius : 0 2vw 0 0;
+    }
+    .hole:nth-child(8){
+        border-radius : 0 0 0 2vw;
+    }
+    .hole:nth-child(10){
+        border-radius : 0 0 2vw 0;
+    }
+
+
+    /* mole */
+    .mole{
+        top : -.6vw;
+        width : 7.7vw !important;
+        height : 7.7vw !important;
+    }
+
+
+    /* btn-container */
+    .btn-container{
+        width : 28vw;
+        height : 10vw;
+        margin : 2vw auto 0 auto;
+        border-radius: 1vw;
+    }
+    .btn-container p{
+        padding-top: 1.8vw;
+        font-size : 1.8rem;
+    }
+    .start-btn{
+        width : 20vw;
+        height : 3.5vw;
+        margin-top : 1.2vw;
+        border-radius: .8vw;
+        font-size : 1.5rem;
+    }
+ }
