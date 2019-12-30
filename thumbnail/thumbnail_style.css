@@ -34,8 +34,8 @@ i{
 }
 
 
-/* color toggle */
-.color-toggle {
+/* switch */
+.switch {
     display: inline-block;
     position: relative;
     top : -17px;
@@ -43,15 +43,15 @@ i{
     height: 30px;
     margin-right: 15px;
   }
-.color-toggle input {
+.switch input {
     opacity: 0;
     width: 0;
     height: 0;
 }
-.color-toggle .checked + .toggle {
+.switch .checked + .toggle {
     background-color: #1e90ff;
 }
-.color-toggle .checked + .toggle:before {
+.switch .checked + .toggle:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
@@ -84,21 +84,6 @@ i{
 .toggle.round:before {
     border-radius: 50%;
 }
-.icon-fontsize{
-    position: absolute;
-    top : 4px;
-    right: 9px;
-    bottom: 0;
-    font-size :1.5rem;
-
-}
-.icon-brush{
-    position: absolute;
-    top : 3px;
-    left: 5px;
-    bottom: 0;
-    font-size :1.5rem;
-}
 
 
 /* color container */
@@ -106,7 +91,7 @@ i{
     margin : 2vw 0 1vw 0;
     user-select:none;
 }
-.color-container .color-wrapper{
+.color-container .palette-wrapper{
     display: inline-block;
     position: relative;
 }
@@ -126,8 +111,8 @@ i{
 }
 
 
-/* color palette */
-.color-palette{
+/* palette modal */
+.palette-modal{
     display: none;
     position: absolute;
     top : -75px;
@@ -137,7 +122,7 @@ i{
     border: 5px solid #fff;
     border-radius: 5px;
 }
-.color-palette:before{
+.palette-modal:before{
     position: absolute;
     top : 50px;
     right: 65px;
@@ -149,23 +134,23 @@ i{
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
 }
-.color-palette .colors{
+.palette-modal .colors{
     display: inline-block;
     cursor: pointer;
     width : 25px;
     height : 25px;
     margin : -2px;
 }
-.color-palette .colors:nth-child(1){
+.palette-modal .colors:nth-child(1){
     border-radius: 3px 0 0 0;
 }
-.color-palette .colors:nth-child(6){
+.palette-modal .colors:nth-child(6){
     border-radius: 0 3px 0 0;
 }
-.color-palette .colors:nth-child(7){
+.palette-modal .colors:nth-child(7){
     border-radius: 0 0 0 3px;
 }
-.color-palette .colors:nth-child(12){
+.palette-modal .colors:nth-child(12){
     border-radius: 0 0 3px 0;
 }
 
@@ -207,6 +192,7 @@ i{
     color : #fff;
 }
 
+
 /* btn container */
 .btn-container button{
     cursor: pointer;
@@ -223,6 +209,24 @@ i{
 .btn-container button:first-child{
     background-color: #fff;
     color : #2d98da;
+}
+
+
+/* icon */
+.icon-fontsize{
+    position: absolute;
+    top : 4px;
+    right: 9px;
+    bottom: 0;
+    font-size :1.5rem;
+
+}
+.icon-brush{
+    position: absolute;
+    top : 3px;
+    left: 5px;
+    bottom: 0;
+    font-size :1.5rem;
 }
 .icon-trash{
     display: inline-block;
