@@ -174,40 +174,40 @@ body {
 
 /* character bgimg */
 .character-head-face.face-front {
-    background-image: url('/3D_Scroll/img/ordi_head_front.png');
+    background-image: url('/3dScroll/img/ordi_head_front.png');
 }
 .character-head-face.face-back {
-    background-image: url('/3D_Scroll/img/ordi_head_back.png');
+    background-image: url('/3dScroll/img/ordi_head_back.png');
 }
 .character-body-face.face-front {
-    background-image: url('/3D_Scroll/img/ordi_body_front.png');
+    background-image: url('/3dScroll/img/ordi_body_front.png');
 }
 .character-body-face.face-back {
-    background-image: url('/3D_Scroll/img/ordi_body_back.png');
+    background-image: url('/3dScroll/img/ordi_body_back.png');
 }
 .character-arm-right .face-front {
-    background-image: url('/3D_Scroll/img/ordi_arm_0.png');
+    background-image: url('/3dScroll/img/ordi_arm_0.png');
 }
 .character-arm-right .face-back {
-    background-image: url('/3D_Scroll/img/ordi_arm_1.png');
+    background-image: url('/3dScroll/img/ordi_arm_1.png');
 }
 .character-arm-left .face-front {
-    background-image: url('/3D_Scroll/img/ordi_arm_1.png');
+    background-image: url('/3dScroll/img/ordi_arm_1.png');
 }
 .character-arm-left .face-back {
-    background-image: url('/3D_Scroll/img/ordi_arm_0.png');
+    background-image: url('/3dScroll/img/ordi_arm_0.png');
 }
 .character-leg-right .face-front {
-    background-image: url('/3D_Scroll/img/ordi_leg_0.png');
+    background-image: url('/3dScroll/img/ordi_leg_0.png');
 }
 .character-leg-right .face-back {
-    background-image: url('/3D_Scroll/img/ordi_leg_1.png');
+    background-image: url('/3dScroll/img/ordi_leg_1.png');
 }
 .character-leg-left .face-front {
-    background-image: url('/3D_Scroll/img/ordi_leg_1.png');
+    background-image: url('/3dScroll/img/ordi_leg_1.png');
 }
 .character-leg-left .face-back {
-    background-image: url('/3D_Scroll/img/ordi_leg_0.png');
+    background-image: url('/3dScroll/img/ordi_leg_0.png');
 }
 
 
