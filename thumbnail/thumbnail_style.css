@@ -9,7 +9,6 @@ body{
 canvas{
     display: block;
     margin: 0 auto;
-    background-color: #2d98da;
 }
 i{
     color : #fff;
@@ -35,36 +34,24 @@ i{
 }
 
 
-/* color container */
-.color-container{
-    margin : 2vw 0 1vw 0;
-}
-.color-container .switch{
+/* color toggle */
+.color-toggle {
     display: inline-block;
-    top : -17px;
-    margin-right: 15px;
-}
-.color-container .color-wrapper{
-    display: inline-block;
-}
-
-
-/* switch */
-.switch {
     position: relative;
-    display: inline-block;
+    top : -17px;
     width: 60px;
     height: 30px;
+    margin-right: 15px;
   }
-.switch input {
+.color-toggle input {
     opacity: 0;
     width: 0;
     height: 0;
 }
-.switch input:checked + .toggle {
+.color-toggle .checked + .toggle {
     background-color: #1e90ff;
 }
-.switch input:checked + .toggle:before {
+.color-toggle .checked + .toggle:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
@@ -82,7 +69,6 @@ i{
 }
 .toggle:before {
     position: absolute;
-    content: "";
     height: 22px;
     width: 22px;
     left: 4px;
@@ -90,6 +76,7 @@ i{
     background-color: #fff;
     -webkit-transition: .4s;
     transition: .4s;
+    content: '';
 }
 .toggle.round {
     border-radius: 34px;
@@ -100,7 +87,7 @@ i{
 .icon-fontsize{
     position: absolute;
     top : 4px;
-    right: 8px;
+    right: 9px;
     bottom: 0;
     font-size :1.5rem;
 
@@ -108,39 +95,84 @@ i{
 .icon-brush{
     position: absolute;
     top : 3px;
-    left: 4px;
+    left: 5px;
     bottom: 0;
-    font-size :1.6rem;
+    font-size :1.5rem;
+}
+
+
+/* color container */
+.color-container{
+    margin : 2vw 0 1vw 0;
+    user-select:none;
+}
+.color-container .color-wrapper{
+    display: inline-block;
+    position: relative;
 }
 
 
 /* default colors */
 .default-colors{
     display: inline-block;
+    cursor: pointer;
     width : 30px;
     height : 30px;
     border : 1px solid #fff;
     border-radius: 5px;
 }
-.default-colors:nth-child(1){
-    background-color: #eb3b5a;
-}
-.default-colors:nth-child(2){
-    background-color: #fa8231;
-}
-.default-colors:nth-child(3){
-    background-color: #f7b731;
-}
-.default-colors:nth-child(4){
-    background-color: #26de81;
-}
-.default-colors:nth-child(5){
+.default-colors:nth-child(10){
     background: linear-gradient(#3867d6, #0fb9b1, #8854d0);
+}
+
+
+/* color palette */
+.color-palette{
+    display: none;
+    position: absolute;
+    top : -75px;
+    right : -65px;
+    width : 155px;
+    height: 55px;
+    border: 5px solid #fff;
+    border-radius: 5px;
+}
+.color-palette:before{
+    position: absolute;
+    top : 50px;
+    right: 65px;
+    content: '';
+    border-style: dashed dashed solid;
+    border-width: 0 10px 10px;
+    border-color: transparent;
+    border-bottom-color: #fff;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.color-palette .colors{
+    display: inline-block;
+    cursor: pointer;
+    width : 25px;
+    height : 25px;
+    margin : -2px;
+}
+.color-palette .colors:nth-child(1){
+    border-radius: 3px 0 0 0;
+}
+.color-palette .colors:nth-child(6){
+    border-radius: 0 3px 0 0;
+}
+.color-palette .colors:nth-child(7){
+    border-radius: 0 0 0 3px;
+}
+.color-palette .colors:nth-child(12){
+    border-radius: 0 0 3px 0;
 }
 
 
 /* text container */
 .text-container{
+    height: 40px;
     margin-bottom : 2vw;
 }
 .text-container select{
@@ -158,6 +190,9 @@ i{
     font-size : 1.6rem;
     color : #000;
 }
+.text-container form{
+    display: inline-block;
+}
 .text-container input{
     width : 400px;
     height: 33px;
@@ -167,22 +202,32 @@ i{
     border-bottom : 1px solid #fff;
     background-color: transparent;
     font-size : 1.8rem;
+    line-height: 44px;
     text-align: center;
     color : #fff;
 }
 
-
 /* btn container */
 .btn-container button{
     cursor: pointer;
-    width : 300px;
+    width : 200px;
     height: 45px;
+    margin : 0 .3vw;
     outline: none;
     border: none;
     border-radius: 5px;
     background-color: #2d98da;
     font-size : 1.8rem;
     color: #fff;
+}
+.btn-container button:first-child{
+    background-color: #fff;
+    color : #2d98da;
+}
+.icon-trash{
+    display: inline-block;
+    font-size : 1.6rem;
+    color : #2d98da;
 }
 .icon-download{
     display: inline-block;

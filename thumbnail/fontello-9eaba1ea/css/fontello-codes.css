@@ -4,4 +4,6 @@
 .icon-fontsize:before { content: '\e802'; } /* '' */
 .icon-download:before { content: '\e803'; } /* '' */
 .icon-inbox:before { content: '\e804'; } /* '' */
+.icon-eye:before { content: '\e805'; } /* '' */
+.icon-trash:before { content: '\e83d'; } /* '' */
 .icon-brush:before { content: '\f1fc'; } /* '' */
