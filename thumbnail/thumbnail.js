@@ -108,7 +108,6 @@ function downloadHandler(){
     const link = document.createElement("a");
 
     link.href = image;
-    link.execCommand('SaveAs');
     link.download = "thumbnail";
     link.click();
 };
