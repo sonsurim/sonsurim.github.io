@@ -108,7 +108,7 @@ function downloadHandler(){
     const link = document.createElement("a");
 
     link.href = image;
-    link.download = "thumbnail";
+    link.download = inputText.value;
     link.click();
 };
 function popModalHandler(e){
