@@ -84,10 +84,10 @@ Surim's Develog
     > - **목표** : 사용자와 서비스 내부의 불편함을 개선
     > - **내용** : 광고상품 안내페이지가 모바일 대응이 되지 않아 사용자와 영업팀과의 소통에 있어 불편함을 겪고있던 페이지입니다.    기존에 PC로 구현되어 있는 페이지를 반응형으로 리뉴얼하여 사용자와 서비스 내부의 불편함을 개선하는 프로젝트입니다.
 
-* **느낀점 및 배운점** : HTML, CSS, JavaScript 등 기본이 되는 언어들을 주로 이용하여 개발을 하였는데 프로젝트를 접하고 Bootstrap를 이용하여 사이트의 레이아웃을 잡아보니 확실히 편리하다는 것을 느꼈다.
- 처음 접한 SASS는 CSS와 구조만 살짝 다를뿐, CSS의 기본 지식이 있어 이용하는데에 빠르게 적응할 수 있었다.
-     새로운 기술들을 사용해보았지만 제일 기본이 되는 언어들을 알고 있으니 조금의 차이점만 있을 뿐 쉽게 이해하고 프로젝트에 더욱 빠르게 적용할 수 있었다.
-         빠르게 변화하는 프론트엔드 세계에서 새로운 기술들을 습득하고 언어들의 기본기를 다짐으로써 나 또한 빠르게 변화하고 진화할 수 있도록 노력해야겠다.
+* **느낀점 및 배운점** : HTML, CSS, JavaScript 등 기본이 되는 언어들을 주로 이용하여 개발을 하였는데 프로젝트를 접하고 Bootstrap를 이용하여 사이트의 레이아웃을 잡아보니 확실히 편리하다는 것을 느꼈습니다.  
+처음 접한 SASS는 CSS와 구조만 살짝 다를뿐, CSS의 기본 지식이 있어 이용하는데에 빠르게 적응할 수 있었습니다.  
+새로운 기술들을 사용해보았지만 제일 기본이 되는 언어들을 알고 있으니 조금의 차이점만 있을 뿐 쉽게 이해하고 프로젝트에 더욱 빠르게 적용할 수 있었습니다.  
+빠르게 변화하는 프론트엔드 세계에서 새로운 기술들을 습득하고 언어들의 기본기를 다짐으로써 나 또한 빠르게 변화하고 진화할 수 있도록 노력하겠습니다.
 
 ### 프로젝트 소개
 * **팀의 규모** : 플랫폼 사업부 - 서비스팀, 영업팀, 마케팅팀 (총 18명)
@@ -105,11 +105,11 @@ Surim's Develog
 * **프로젝트 성과** : 사용자와 서비스 내부 불편함 해소, 전사 메일로 해당 프로젝트 개발에 대한 칭찬을 받았습니다.
 
 ### 구현 이미지
-![peterpan_img1](https://sonsurim.github.io/portfolio/img/peterpan_img1.PNG)
-  기기별로 대응하여 사용자의 UX에 편리하게 사이트의 레이아웃을 개편하였습니다.
+![peterpan_img1](https://sonsurim.github.io/portfolio/img/peterpan_img1.PNG)  
+기기별로 대응하여 사용자의 UX에 편리하게 사이트의 레이아웃을 개편하였습니다.  
 
-![peterpan_img1](https://sonsurim.github.io/portfolio/img/peterpan_img2.PNG)
-  SASS와 JavaScript를 이용하여 동적으로 반응하며 사용자에게 정보를 한눈에 볼 수 있는 UI를 제공하였습니다.
+![peterpan_img1](https://sonsurim.github.io/portfolio/img/peterpan_img2.PNG)  
+SASS와 JavaScript를 이용하여 동적으로 반응하며 사용자에게 정보를 한눈에 볼 수 있는 UI를 제공하였습니다.  
 
 - - -
 
@@ -133,28 +133,28 @@ Surim's Develog
 
 * **프로젝트 문제점 해결방법** : 문제점 해결을 위한 구글링과 Canvas에 대한 공부로 문제점을 극복할 수 있었습니다.
 
-* **느낀점 및 배운점** : 공부할 내용은 많고 시간이 지나서 코드와 사이트를 다시 봤을 때, 계속해서 개선하고 싶은점이 많은 사이트였습니다.
-  Canvas와 JavaScript 기본에 대해서 많이 배웠으며 간단하면서 동적인 웹 사이트를 만들 수 있는 것에 하루하루 재미를 느꼈던 프로젝트였습니다.
+* **느낀점 및 배운점** : 공부할 내용은 많고 시간이 지나서 코드와 사이트를 다시 봤을 때, 계속해서 개선하고 싶은점이 많은 사이트였습니다.  
+Canvas와 JavaScript 기본에 대해서 많이 배웠으며 간단하면서 동적인 웹 사이트를 만들 수 있는 것에 하루하루 재미를 느꼈던 프로젝트였습니다.  
 
 ### 프로젝트 소스 코드
-![painting_img1](https://sonsurim.github.io/portfolio/img/painting_img1.PNG)
-   해당 페이지의 마크업 구조입니다.
+![painting_img1](https://sonsurim.github.io/portfolio/img/painting_img1.PNG)  
+해당 페이지의 마크업 구조입니다.
 
-![painting_img2](https://sonsurim.github.io/portfolio/img/painting_img2.PNG)
-   페이지의 전역 변수들입니다.
+![painting_img2](https://sonsurim.github.io/portfolio/img/painting_img2.PNG)  
+페이지의 전역 변수들입니다.
 
-![painting_img3](https://sonsurim.github.io/portfolio/img/painting_img3.PNG)
-   페이지의 일부 소스코드입니다. 해당 페이지는 이벤트 핸들러가 많이 사용된 페이지이기 때문에
-     페이지의 로드와 함께 함수 init을 실행해줌으로써 이벤트 핸들러들을 한번에 초기화 해주었습니다.
-
-![painting_img4](https://sonsurim.github.io/portfolio/img/painting_img4.PNG)
-![painting_img5](https://sonsurim.github.io/portfolio/img/painting_img5.PNG)
-   페이지의 이벤트 핸들러부분입니다.
+![painting_img3](https://sonsurim.github.io/portfolio/img/painting_img3.PNG)  
+페이지의 일부 소스코드입니다. 해당 페이지는 이벤트 핸들러가 많이 사용된 페이지이기 때문에  
+페이지의 로드와 함께 함수 init을 실행해줌으로써 이벤트 핸들러들을 한번에 초기화 해주었습니다.  
+  
+![painting_img4](https://sonsurim.github.io/portfolio/img/painting_img4.PNG)  
+![painting_img5](https://sonsurim.github.io/portfolio/img/painting_img5.PNG)  
+페이지의 이벤트 핸들러부분입니다.
 
 ### 프로젝트 구현 이미지
-![painting_img6](https://sonsurim.github.io/portfolio/img/paingting_img6.png)
-   range바를 이용하여 붓의 크기를 설정할 수 있으며 toggle버튼인 fill-paint버튼을 이용하여 그림을 그릴 수 있고 배경색을 채울 수 있습니다.
-      하단의 컬러팔레트를 이용하여 색을 변경할 수 있게 구현해두었습니다.
+![painting_img6](https://sonsurim.github.io/portfolio/img/paingting_img6.png)  
+range바를 이용하여 붓의 크기를 설정할 수 있으며 toggle버튼인 fill-paint버튼을 이용하여 그림을 그릴 수 있고 배경색을 채울 수 있습니다.  
+하단의 컬러팔레트를 이용하여 색을 변경할 수 있게 구현해두었습니다.  
 
 - - -
 
