@@ -12,10 +12,9 @@ Surim's Develog
 
 * **프로젝트 목표와 내용**
     > - **목표** : 사이트 전체 톤앤매너 개선을 위해 피터팬 안심직거래 디자인 개편
-    > - **내용** : 웹, 모바일페이지를 기존의 페이지 틀에 맞춰 새롭게 개편하는 프로젝트입니다.   반응형이 아닌 접속하는 기기에 따라 화면을 보여주는 방식으로 진행하였습니다.
+    > - **내용** : 웹, 모바일페이지를 기존의 페이지 틀에 맞춰 새롭게 개편하는 프로젝트입니다.<br/>반응형이 아닌 접속하는 기기에 따라 화면을 보여주는 방식으로 진행하였습니다.
 
-* **느낀점 및 배운점** : 개발로는 첫 단독 프로젝트였고 짧은 기간과 기술들에 대한 이해력이 부족했지만
-  기본기에 대한 이해와 업무 시간 외에 공부했던 시간들이 있어 문제점을 해결하고 해당 기간내에 개발을 진행할 수 있었습니다.
+* **느낀점 및 배운점** : 개발로는 첫 단독 프로젝트였고 짧은 기간과 기술들에 대한 이해력이 부족했지만 기본기에 대한 이해와 업무 시간 외에 공부했던 시간들이 있어 문제점을 해결하고 해당 기간내에 개발을 진행할 수 있었습니다.
 
 
 ### 프로젝트 소개
@@ -46,10 +45,9 @@ Surim's Develog
 
 * **프로젝트 목표와 내용**
     > - **목표** : 사이트 전체 톤앤매너 개선을 위해 피터팬 ZERO 멤버쉽 페이지 디자인 리뉴얼
-    > - **내용** : 웹, 모바일페이지를 기존의 페이지 틀에 맞춰 새롭게 개편하는 프로젝트입니다.   반응형이 아닌 접속하는 기기에 따라 화면을 보여주는 방식으로 진행하였습니다.
+    > - **내용** : 웹, 모바일페이지를 기존의 페이지 틀에 맞춰 새롭게 개편하는 프로젝트입니다.<br/>반응형이 아닌 접속하는 기기에 따라 화면을 보여주는 방식으로 진행하였습니다.
 
-* **느낀점 및 배운점** : 첫 프로젝트와 비슷한 스펙이었지만 기간이 짧아지며 다른 프로젝트와 병행을 하며 빠르게 처리해야 하는 프로젝트였습니다.
-  첫 프로젝트에서 배운점들을 활용 및 응용하여 지체되는 기간없이 해당 기간내에 개발을 진행할 수 있었습니다.
+* **느낀점 및 배운점** : 첫 프로젝트와 비슷한 스펙이었지만 기간이 짧아지며 다른 프로젝트와 병행을 하며 빠르게 처리해야 하는 프로젝트였습니다.<br/>첫 프로젝트에서 배운점들을 활용 및 응용하여 지체되는 기간없이 해당 기간내에 개발을 진행할 수 있었습니다.
 
 #### 프로젝트 소개
 * **팀의 규모** : 플랫폼 사업부 - 서비스팀, 영업팀, 마케팅팀 (총 18명)
@@ -84,7 +82,7 @@ Surim's Develog
     > - **목표** : 사용자와 서비스 내부의 불편함을 개선
     > - **내용** : 광고상품 안내페이지가 모바일 대응이 되지 않아 사용자와 영업팀과의 소통에 있어 불편함을 겪고있던 페이지입니다.    기존에 PC로 구현되어 있는 페이지를 반응형으로 리뉴얼하여 사용자와 서비스 내부의 불편함을 개선하는 프로젝트입니다.
 
-* **느낀점 및 배운점** : HTML, CSS, JavaScript 등 기본이 되는 언어들을 주로 이용하여 개발을 하였는데 프로젝트를 접하고 Bootstrap를 이용하여 사이트의 레이아웃을 잡아보니 확실히 편리하다는 것을 느꼈습니다.     처음 접한 SASS는 CSS와 구조만 살짝 다를뿐, CSS의 기본 지식이 있어 이용하는데에 빠르게 적응할 수 있었습니다.     새로운 기술들을 사용해보았지만 제일 기본이 되는 언어들을 알고 있으니 조금의 차이점만 있을 뿐 쉽게 이해하고 프로젝트에 더욱 빠르게 적용할 수 있었습니다.     빠르게 변화하는 프론트엔드 세계에서 새로운 기술들을 습득하고 언어들의 기본기를 다짐으로써 나 또한 빠르게 변화하고 진화할 수 있도록 노력하겠습니다.
+* **느낀점 및 배운점** : HTML, CSS, JavaScript 등 기본이 되는 언어들을 주로 이용하여 개발을 하였는데 프로젝트를 접하고 Bootstrap를 이용하여 사이트의 레이아웃을 잡아보니 확실히 편리하다는 것을 느꼈습니다.<br/>처음 접한 SASS는 CSS와 구조만 살짝 다를뿐, CSS의 기본 지식이 있어 이용하는데에 빠르게 적응할 수 있었습니다.<br/>새로운 기술들을 사용해보았지만 제일 기본이 되는 언어들을 알고 있으니 조금의 차이점만 있을 뿐 쉽게 이해하고 프로젝트에 더욱 빠르게 적용할 수 있었습니다.<br/>빠르게 변화하는 프론트엔드 세계에서 새로운 기술들을 습득하고 언어들의 기본기를 다짐으로써 저 또한 빠르게 변화하고 진화할 수 있도록 노력해야겠다는 점을 느꼈습니다.
 
 ### 프로젝트 소개
 * **팀의 규모** : 플랫폼 사업부 - 서비스팀, 영업팀, 마케팅팀 (총 18명)
@@ -102,11 +100,11 @@ Surim's Develog
 * **프로젝트 성과** : 사용자와 서비스 내부 불편함 해소, 전사 메일로 해당 프로젝트 개발에 대한 칭찬을 받았습니다.
 
 ### 구현 이미지
-![peterpan_img1](https://sonsurim.github.io/portfolio/img/peterpan_img1.PNG)      
-      기기별로 대응하여 사용자의 UX에 편리하게 사이트의 레이아웃을 개편하였습니다.      
+![peterpan_img1](https://sonsurim.github.io/portfolio/img/peterpan_img1.PNG)<br/>
+기기별로 대응하여 사용자의 UX에 편리하게 사이트의 레이아웃을 개편하였습니다.<br/>
 
-![peterpan_img1](https://sonsurim.github.io/portfolio/img/peterpan_img2.PNG)       
-     SASS와 JavaScript를 이용하여 동적으로 반응하며 사용자에게 정보를 한눈에 볼 수 있는 UI를 제공하였습니다.  
+![peterpan_img1](https://sonsurim.github.io/portfolio/img/peterpan_img2.PNG)<br/>
+SASS와 JavaScript를 이용하여 동적으로 반응하며 사용자에게 정보를 한눈에 볼 수 있는 UI를 제공하였습니다.<br/>
 
 - - -
 
@@ -130,28 +128,63 @@ Surim's Develog
 
 * **프로젝트 문제점 해결방법** : 문제점 해결을 위한 구글링과 Canvas에 대한 공부로 문제점을 극복할 수 있었습니다.
 
-* **느낀점 및 배운점** : 공부할 내용은 많고 시간이 지나서 코드와 사이트를 다시 봤을 때, 계속해서 개선하고 싶은점이 많은 사이트였습니다.      
-Canvas와 JavaScript 기본에 대해서 많이 배웠으며 간단하면서 동적인 웹 사이트를 만들 수 있는 것에 하루하루 재미를 느꼈던 프로젝트였습니다.  
+* **느낀점 및 배운점** : 공부할 내용은 많고 시간이 지나서 코드와 사이트를 다시 봤을 때, 계속해서 개선하고 싶은점이 많은 사이트였습니다.<br/>Canvas와 JavaScript 기본에 대해서 많이 배웠으며 간단하면서 동적인 웹 사이트를 만들 수 있는 것에 하루하루 재미를 느꼈던 프로젝트였습니다.
 
 ### 프로젝트 소스 코드
-![painting_img1](https://sonsurim.github.io/portfolio/img/painting_img1.PNG)       
-     해당 페이지의 마크업 구조입니다.
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/paintingBoard_style.css" />
+    <title>Painting Board</title>
+</head>
+<body>
+    <canvas class="canvas" width="350vw" height="350vw"></canvas>
+    <div class="control-container">
+        <div class="control-range">
+            <input type="range" min="0.1" max="5" value="2.5" step="0.1" />
+        </div>
+        <div class="control-btns">
+             <button class="fill">FILL</button>
+             <button class="save">Save</button>
+        </div>
+        <div class="control-colors">
+            <div class="colors" style="background-color: #2c2c2c;"></div>
+            <div class="colors" style="background-color: #ffffff;"></div>
+            <div class="colors" style="background-color: #ff3b30;"></div>
+            <div class="colors" style="background-color: #ff9500;"></div>
+            <div class="colors" style="background-color: #ffcc00;"></div>
+            <div class="colors" style="background-color: #4cf963;"></div>
+            <div class="colors" style="background-color: #5ac8fa;"></div>
+            <div class="colors" style="background-color: #0579ff;"></div>
+            <div class="colors" style="background-color: #5856d6;"></div>
+        </div>
+    </div>
+    <script src="js/paint.js"></script>
+    <script src="../notice.js"></script>
+</body>
+</html>
+```
+해당 페이지의 마크업 구조입니다.
 
-![painting_img2](https://sonsurim.github.io/portfolio/img/painting_img2.PNG)    
-    페이지의 전역 변수들입니다.
+![painting_img2](https://sonsurim.github.io/portfolio/img/painting_img2.PNG)<br/>
+페이지의 전역 변수들입니다.
 
-![painting_img3](https://sonsurim.github.io/portfolio/img/painting_img3.PNG)     
-    페이지의 일부 소스코드입니다. 해당 페이지는 이벤트 핸들러가 많이 사용된 페이지이기 때문에      
-    페이지의 로드와 함께 함수 init을 실행해줌으로써 이벤트 핸들러들을 한번에 초기화 해주었습니다.  
-  
-![painting_img4](https://sonsurim.github.io/portfolio/img/painting_img4.PNG)     
-![painting_img5](https://sonsurim.github.io/portfolio/img/painting_img5.PNG)      
-     페이지의 이벤트 핸들러부분입니다.
+![painting_img3](https://sonsurim.github.io/portfolio/img/painting_img3.PNG)<br/>
+페이지의 일부 소스코드입니다. 해당 페이지는 이벤트 핸들러가 많이 사용된 페이지이기 때문에<br/>
+페이지의 로드와 함께 함수 init을 실행해줌으로써 이벤트 핸들러들을 한번에 초기화 해주었습니다.<br/>
+
+![painting_img4](https://sonsurim.github.io/portfolio/img/painting_img4.PNG)<br/>
+![painting_img5](https://sonsurim.github.io/portfolio/img/painting_img5.PNG)<br/>
+페이지의 이벤트 핸들러부분입니다.
 
 ### 프로젝트 구현 이미지
-![painting_img6](https://sonsurim.github.io/portfolio/img/paingting_img6.png)       
-    range바를 이용하여 붓의 크기를 설정할 수 있으며 toggle버튼인 fill-paint버튼을 이용하여 그림을 그릴 수 있고 배경색을 채울 수 있습니다.     
-하단의 컬러팔레트를 이용하여 색을 변경할 수 있게 구현해두었습니다.  
+![painting_img6](https://sonsurim.github.io/portfolio/img/painting_img6.png)<br/>
+range바를 이용하여 붓의 크기를 설정할 수 있으며 toggle버튼인 fill-paint버튼을 이용하여 그림을 그릴 수 있고 배경색을 채울 수 있습니다.<br/>
+하단의 컬러팔레트를 이용하여 색을 변경할 수 있게 구현해두었습니다.
 
 - - -
 
@@ -185,7 +218,7 @@ Canvas와 JavaScript 기본에 대해서 많이 배웠으며 간단하면서 동
 
 
 ### 구현 이미지
-![painting_img6](https://sonsurim.github.io/portfolio/img/paingting_img6.PNG)
+![painting_img6](https://sonsurim.github.io/portfolio/img/painting_img6.PNG)
 range바를 이용하여 붓의 크기를 설정할 수 있으며 toggle버튼인 fill-paint버튼을 이용하여 그림을 그릴 수 있고 배경색을 채울 수 있습니다.<br>
 하단의 컬러팔레트를 이용하여 색을 변경할 수 있게 구현해두었습니다.
 
