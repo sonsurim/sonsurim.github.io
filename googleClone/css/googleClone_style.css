@@ -317,6 +317,7 @@ main > img {
     height: 24px;
     width: 24px;
     background: url(//www.gstatic.com/inputtools/images/tia.png) no-repeat center;
+    background-size: contain;
 }
 .keybord-item p {
     visibility: hidden;
@@ -356,8 +357,8 @@ main > img {
     cursor: pointer;
     height: 24px;
     width: 24px;
-    background-size: 24px;
     background: url(//www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png) 0 0 no-repeat;
+    background-size: contain;
 }
 .voice-item p{
     visibility: hidden;
