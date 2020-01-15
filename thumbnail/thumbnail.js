@@ -1,4 +1,3 @@
-(function(){
 const canvas = document.querySelector('canvas');
 const ctx = canvas.getContext('2d');
 const textForm = document.querySelector('form');
@@ -128,6 +127,16 @@ function popModalHandler(e){
     }
 };
 
+function specialChar() {
+    var pattern_spc = /[.]/;
+
+    if( (pattern_spc.test(inputText.value))) {
+        alert("마침표는 사용이 불가능 합니다!");
+        inputText.value = inputText.value.replace(".","");
+    }
+
+}
+
 function init(){
     document.addEventListener('click', popModalHandler);
     defaultPalette.addEventListener('click', defaultPaletteHandler);
@@ -157,4 +166,3 @@ function init(){
 };
 
 init();
-})();
