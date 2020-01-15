@@ -128,7 +128,7 @@ function popModalHandler(e){
 };
 
 function specialChar() {
-    var pattern_spc = /[.]/;
+    let pattern_spc = /[.]/;
 
     if( (pattern_spc.test(inputText.value))) {
         alert("마침표는 사용이 불가능 합니다!");
