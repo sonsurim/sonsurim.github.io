@@ -1,5 +1,5 @@
 # sonsurim.github.io
-Surim's Develog
+**[Surim's Develog]**(https://velog.io/@surim014)
 
 ## Peterpan Proeject1 - company
 **프로젝트 소개 URL** : [https://sonsurim.github.io/portfolio/Peterpan1](https://sonsurim.github.io/portfolio/Peterpan1)
