@@ -5,7 +5,7 @@
 
 * **기간** : 2019.08.19 ~ 2019.08.22
 
-* **URL** : [https://sonsurim.github.io/googleClone/html/index.html](https://sonsurim.github.io/googleClone/html/index.html)
+* **URL** : [https://sonsurim.github.io/googleClone/index.html](https://sonsurim.github.io/googleClone/index.html)
 
 * **개발 환경** : HTML, CSS, JavaScript, Fontello, VScode, Git
 
