@@ -126,8 +126,7 @@ function popModalHandler(e){
         paletteModal.classList.remove('showing');
     }
 };
-
-function specialChar() {
+function specialCharHandler() {
     let pattern_spc = /[.]/;
 
     if( (pattern_spc.test(inputText.value))) {
@@ -144,6 +143,7 @@ function init(){
     inputCheck.addEventListener('click', switchHandler);
     clearBtn.addEventListener('click', setClearHandler);
     downloadBtn.addEventListener('click', downloadHandler);
+    inputText.addEventListener('keyup', specialCharHandler);
 
     inputWidth.addEventListener('keyup', function(){
         canvasObj.width = this.value;
