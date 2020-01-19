@@ -1,6 +1,10 @@
 const header = document.querySelector('.header');
+const sliderItem = document.querySelectorAll('.slider-item');
+const navContainer = document.querySelector('.nav-row');
+const navItem = document.querySelectorAll('.nav');
 
 let currentWidth;
+let currentSlider = 0;
 
 function appendHeader(){
     if(currentWidth < 1200){
@@ -34,13 +38,29 @@ function resizeHandler(e){
     currentWidth = e.target.innerWidth;
     appendHeader();
 }
+function autoSlider(){
+    setInterval(function(){
+        if(currentSlider >= 3){
+            currentSlider = 0;
+        }else{
+            const showing = document.querySelector('.showing');
+            const select = document.querySelector('.select');
 
+            showing.classList.remove('showing');
+            select.classList.remove('select');
+            sliderItem[currentSlider].classList.add('showing');
+            navItem[currentSlider].classList.add('select');
+            currentSlider++;
+        }
+    },3000);
+}
 
 
 function init(){
     currentWidth = window.innerWidth;
     window.addEventListener('resize', resizeHandler);
     appendHeader();
+    autoSlider();
 }
 
 init();
