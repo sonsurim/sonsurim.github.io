@@ -1,0 +1,252 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+
+/* bootstrap common */
+.col-2{
+    width : 7.9rem !important;
+}
+.col-2, .col-8, .col-lg-2, .col-lg-8{
+    display : inline;
+    padding : 0 !important;
+}
+
+
+/* header */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding : 1.9rem 0;
+}
+.header .icon-menu{
+    display : inline-block;
+    font-size : 1.6rem;
+}
+.header div:nth-child(2) img{
+    margin-top : .6rem;
+    width : 16.2rem;
+    height : 1.2rem;
+}
+.header div:nth-child(3) img{
+    margin-top : -.4rem;
+    width : 3rem;
+    height : 3rem;
+}
+
+/* header-pc */
+.header-pc{
+    display : none;
+}
+
+
+/* main */
+.main{
+    margin-top : 3rem;
+}
+.main .title{
+    margin : 0;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size : 2.4rem ;
+    font-weight: 600;
+}
+
+/* content */
+.content{
+    margin-top : 5rem;
+}
+.content-row .content:nth-child(1){
+    margin-top : 2rem;
+}
+.content img{
+    width : 100%;
+}
+
+
+/* button- row */
+.button-row{
+    display : flex;
+    justify-content: space-between;
+    margin-top : 2rem;
+}
+.button-row .button{
+    padding : .2rem 0 .3rem 0;
+    border : .9px solid #ececec;
+    border-radius: 1.72rem;
+    font-size : 1rem;
+}
+.button-row .button:nth-child(1){
+    width : 9.9rem;
+    color : #9e9e9e;
+}
+.button-row .button:nth-child(2){
+    width : 4.8rem;
+    border : .9px solid #1792f0;
+    color : #1792f0;
+}
+
+
+/* info */
+.info-row{
+    margin-top : 1.4rem;
+}
+.info-row h4{
+    margin: 0;
+    font-size : 1.8rem;
+    font-weight: 600;
+}
+.info-row p{
+    margin: 1rem 0 0 0;
+    font-size : 1.4rem;
+    letter-spacing: normal;
+    color : #868c96;
+}
+
+
+/* date */
+.date-row{
+    margin-top : 1.4rem;
+}
+.date-row span{
+    font-size : 1.2rem;
+    color : #b4b5b7;
+}
+.date-row span:first-child{
+    margin-right : .8rem;
+}
+
+
+/* comment */
+.comment{
+    font-family: 'Nanum Myeongjo', serif;
+}
+.comment.col-xl-7{
+    margin-top : 9rem;
+}
+.comment h1{
+    font-size : 4rem;
+    font-weight: bold;
+}
+.comment h3{
+    margin-top : 4rem;
+    font-size : 2.4rem;
+    font-weight: bold;
+    line-height: 2;
+}
+
+
+/* nav */
+.nav-row{
+    display : flex;
+    margin-top : 6.3rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-circle{
+    display: flex;
+    height: 100%;
+}
+.nav-circle .nav{
+    margin : 0 .4rem;
+    width: .8rem;
+    height: .8rem;
+    border-radius: 6rem;
+    background-color: #d8d8d8;
+    cursor: pointer;
+}
+.nav-circle .nav.select{
+    background-color: #000;
+}
+.nav-btn img{
+    width : 5.4rem;
+    height : 5.4rem;
+    cursor : pointer;
+}
+
+
+/* curation */
+.curation.col-xl-5{
+    margin-top : 9rem;
+}
+.curation h1{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size : 4rem;
+    font-weight: bold;
+}
+.curation-content-row{
+    margin-top : 4.2rem;
+    margin-bottom : 5rem;
+}
+.curation-content-row hr{
+    margin : 3rem 0;
+}
+.curation-content p{
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: bold;
+}
+.curation-content p:first-child{
+    font-size : 1.8rem;
+}
+.curation-content p:last-child{
+    font-size : 1.4rem;
+    color : #868c96;
+    line-height: 2;
+    letter-spacing: normal;
+    margin : 0;
+}
+
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
+@media all and (max-width:767px) {
+    .nav-btn{
+        display : none;
+    }
+}
+
+
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1024px)*/
+@media all and (min-width:768px) and (max-width:1199px) {
+    .content-row .content:nth-child(2){
+        margin-top : 2rem;
+    }
+}
+
+/* PC (해상도 1201px)*/
+@media all and (min-width:1200px) {
+    /* header */
+    .container .header{
+        display : none;
+    }
+    .header-pc{
+        display : flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top : 3rem;
+    }
+    .header-logo{
+        height: 100%;
+    }
+    .header-list{
+        display: flex;
+        align-items: center;
+        margin : 0;
+        font-size : 1.4rem;
+        font-weight: 550;
+    }
+    .header-list li{
+        margin-left : 4rem;
+    }
+
+
+    /* content */
+    .main .title{
+        margin-top : 8.6rem;
+    }
+    .content-row .content:nth-child(2){
+        margin-top : 2rem;
+    }
+    .content-row .content:nth-child(3){
+        margin-top : 2rem;
+    }
+    .comment.col-xl-7{
+        padding-right: 6.7rem;
+    }
+}
