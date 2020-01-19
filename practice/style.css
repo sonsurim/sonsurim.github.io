@@ -1,16 +1,6 @@
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 
 
-/* bootstrap common */
-.col-2{
-    width : 7.9rem !important;
-}
-.col-2, .col-8, .col-lg-2, .col-lg-8{
-    display : inline;
-    padding : 0 !important;
-}
-
-
 /* header */
 .header{
     display: flex;
@@ -22,20 +12,22 @@
     display : inline-block;
     font-size : 1.6rem;
 }
-.header div:nth-child(2) img{
-    margin-top : .6rem;
-    width : 16.2rem;
-    height : 1.2rem;
-}
-.header div:nth-child(3) img{
-    margin-top : -.4rem;
-    width : 3rem;
-    height : 3rem;
-}
 
-/* header-pc */
 .header-pc{
-    display : none;
+    display : flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top : 3rem;
+}
+.header-list{
+    display: flex;
+    align-items: center;
+    margin : 0;
+    font-size : 1.4rem;
+    font-weight: 550;
+}
+.header-list li{
+    margin-left : 4rem;
 }
 
 
@@ -50,6 +42,7 @@
     font-weight: 600;
 }
 
+
 /* content */
 .content{
     margin-top : 5rem;
@@ -59,8 +52,13 @@
 }
 .content img{
     width : 100%;
+    transition: .7s;
 }
-
+.content img:hover{
+    transform: scale(1.1);
+    transition: .7s;
+    cursor: pointer;
+}
 
 /* button- row */
 .button-row{
@@ -118,8 +116,6 @@
 /* comment */
 .comment{
     font-family: 'Nanum Myeongjo', serif;
-}
-.comment.col-xl-7{
     margin-top : 9rem;
 }
 .comment h1{
@@ -146,9 +142,9 @@
     height: 100%;
 }
 .nav-circle .nav{
-    margin : 0 .4rem;
     width: .8rem;
     height: .8rem;
+    margin : 0 .4rem;
     border-radius: 6rem;
     background-color: #d8d8d8;
     cursor: pointer;
@@ -164,7 +160,7 @@
 
 
 /* curation */
-.curation.col-xl-5{
+.curation{
     margin-top : 9rem;
 }
 .curation h1{
@@ -194,6 +190,7 @@
     margin : 0;
 }
 
+
 /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
 @media all and (max-width:767px) {
     .nav-btn{
@@ -211,41 +208,21 @@
 
 /* PC (해상도 1201px)*/
 @media all and (min-width:1200px) {
-    /* header */
-    .container .header{
-        display : none;
-    }
-    .header-pc{
-        display : flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-top : 3rem;
-    }
-    .header-logo{
-        height: 100%;
-    }
-    .header-list{
-        display: flex;
-        align-items: center;
-        margin : 0;
-        font-size : 1.4rem;
-        font-weight: 550;
-    }
-    .header-list li{
-        margin-left : 4rem;
-    }
-
-
-    /* content */
+    /* main */
     .main .title{
         margin-top : 8.6rem;
     }
+
+    /* content */
     .content-row .content:nth-child(2){
         margin-top : 2rem;
     }
     .content-row .content:nth-child(3){
         margin-top : 2rem;
     }
+
+
+    /* comment */
     .comment.col-xl-7{
         padding-right: 6.7rem;
     }
