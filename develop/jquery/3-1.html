@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./jquery-3.4.1.min.js"></script>
+    <script>
+    $(function(){
+        // console.log($('#div1').attr('style'));
+        // console.log($('#div2').attr('class'));
+        // get : $('div1').attr('태그의 속성 key명');
+        // set : $('div1').attr('태그의 속성 key명', '세팅할 value');
+        // $('#div1').attr('style', 'color : red');
+        // $('#div2').attr('style', 'color : blue');
+        console.log($('#node1').html());
+        $('#node2').html('<h2>Hello</h2>');
+        // $('#node2').text('<h2>Hello</h2>');
+    });
+    </script>
+</head>
+<body>
+    <!-- <div id="div1" style="display: block;">테스트1</div>
+    <div id="div2" class="testDiv">테스트2</div> -->
+    <div id="node1">
+        <table>
+            <tr>
+                <td>
+                    <h2>테이블입니다.</h2>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="node2"></div>
+</body>
+</html>

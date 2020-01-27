@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./jquery-3.4.1.min.js"></script>
+    <script>
+    $(function(){
+        // let txt1 = document.getElementById('txt1');
+        // txt1.value = 'text2';
+        // $('#txt1').val('text2');
+        // document.getElementById('txt1').value
+        // $('#txt1').val();
+        let txt1 = $('#txt1').val();
+        let hdn1 = $('#hdn1').val();
+        let slct1 = $('#slct1').val();
+        console.log(txt1);
+        console.log(hdn1);
+        console.log(slct1);
+    });
+    </script>
+</head>
+<body>
+    <input type="text" id="txt1" value="text1"><br>
+    <input type="hidden" id="hdn1" value="hidden1"><br>
+    <select name="slct1" id="slct1">
+        <option value="select1">select1</option>
+        <option value="select2" selected>select2</option>
+        <option value="select3">select3</option>
+    </select>
+</body>
+</html>
