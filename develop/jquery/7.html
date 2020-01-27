@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./jquery-3.4.1.min.js"></script>
+    <script>
+        $(function(){
+            $('input[type="text"]:eq(0)').val();
+            $('input[type="text"]:eq(1)').val();
+            $('input[type="text"]:eq(2)').val();
+            $('input[type="text"]:eq(3)').val();
+            $('div').each(function(index){
+                // const txt = $('div').eq(index).find('input[type=text]').val();
+                // $('div').eq(index) === $(this)
+                // const txt = $(this).find('input[type=text]').val();
+                // console.log(txt);
+                // console.log($(this).html())
+                // if(index === 1){
+                //     return false;
+                // }
+                const txtTag = `임시값${index}`
+                $(this).find('input[type=text]').attr('value', txtTag);
+            })
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <input type="text" value="txt1">
+    </div>
+    <div>
+        <input type="text" value="txt2">
+    </div>
+    <div>
+        <input type="text" value="txt3">
+    </div>
+    <div>
+        <input type="text" value="txt4">
+    </div>
+</body>
+</html>

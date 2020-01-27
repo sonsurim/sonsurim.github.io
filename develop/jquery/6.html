@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./jquery-3.4.1.min.js"></script>
+    <script>
+        $(function(){
+            // .find()  : 자식값들을 찾고자 할 경우 사용한다.
+            // const idTxt = $('table').find('#txt').val();
+            // console.log(idTxt);
+            const txt = $('#txt').parent().next().find('.txt:eq(1)') ;
+            console.log(txt.val());
+        });
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <input type="text" id="txt" value="텍스트값">
+            </td>
+            <td>
+                <input type="text" class="txt" value="텍스트값1">
+                <input type="text" class="txt" value="텍스트값2">
+                <input type="text" class="txt" value="텍스트값3">
+                <input type="text" class="txt" value="텍스트값4">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="radio" name="rdo" value="라디오 첫번째 값">
+                <input type="radio" name="rdo" value="라디오 두번째 값" checked>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

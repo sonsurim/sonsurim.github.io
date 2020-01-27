@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./jquery-3.4.1.min.js"></script>
+    <script>
+        $(function(){
+            // before(),after(),prepend(),append()
+            const txt = `<div><h1>삽입된 레이아웃</h1></div>`;
+            $('#layer2').before(txt);
+            $('#layer2').after(txt);
+            $('#layer2').prepend(txt);
+            $('#layer2').append(txt);
+        });
+    </script>
+</head>
+<body>
+    <div id="layer1">
+        <h2>첫번째 레이아웃</h2>
+    </div>
+    <div id="layer2">
+        <h2>두번째 레이아웃</h2>
+    </div>
+    <div id="layer3">
+        <h2>세번째 레이아웃</h2>
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./jquery-3.4.1.min.js"></script>
+    <script>
+        $(function(){
+            // click Event
+            $('input[type=button]').click(function(){
+                console.log($('select').val(), $('input[type=text]').val());
+            });
+
+            // keypress Event
+            $('input[type=text]').keypress(function(e){
+                if(e.keyCode === 13){
+                    console.log($('select').val(), $('input[type=text]').val());
+                }
+            });
+
+            // on Event
+        });
+    </script>
+</head>
+<body>
+    <!-- <input type="button" id="alertBtn" value="clcik!"> -->
+    <select>
+        <option value="first">첫번째 값</option>
+        <option value="second">두번째 값</option>
+        <option value="third">세번째 값</option>
+    </select>
+    <input type="text">
+    <input type="button" value="검색">
+</body>
+</html>

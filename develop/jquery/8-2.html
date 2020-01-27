@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./jquery-3.4.1.min.js"></script>
+    <script>
+        $(function(){
+                const textTag = `<h1>임시 텍스트</h1>`
+            $('input[type=button]:eq(0)').click(function(){
+                $('div:eq(1)').before(textTag);
+            })
+            $('input[type=button]:eq(1)').click(function(){
+                $('div:eq(1)').after(textTag);
+            })
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <input type="button" value="이전 추가">
+        <input type="button" value="이후 추가">
+    </div>
+    <div>---------------기준점------------------</div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .sample1{
+            color : red;
+            border : 1px solid black;
+        }
+        .sample2{
+            color : green;
+        }
+    </style>
+    <script src="./jquery-3.4.1.min.js"></script>
+    <script>
+        $(function(){
+            // .css()로 style 변경하기
+            // $('div:eq(0)').css('color','red');
+            // $('div:eq(0)').css('border','1px solid black');
+            // .attr()로 style 변경하기
+            // $('div:eq(1)').attr('style','color:red; border:1px solid black');
+            // .addClass()로 style 변경하기
+            $('div:eq(0)').addClass('sample1');
+            // .removeClass()로 style 변경하기
+            // $('div:eq(0)').removeClass('sample1');
+            // .hasClass()로 style 존재여부 확인하기
+            console.log($('div:eq(0)').hasClass('sample1'));
+        });
+    </script>
+</head>
+<body>
+    <div>스타일 제어1</div>
+    <div>스타일 제어2</div>
+</body>
+</html>

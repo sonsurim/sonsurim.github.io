@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./jquery-3.4.1.min.js"></script>
+    <script>
+        $(function(){
+            // $('.xxx') : Class Selector
+            // $('#xxx') : ID Selector
+            // $('input[name=xxx]') : Tag Selector
+            // $('input[name=xxx]:checked') : Tag Selector
+            const txt1 = $('.txt1').val();
+            const txt2 = $('.txt2').val();
+            const txt3 = $('input[name=txt1]').val();
+            const txt4 = $('input[name=txt2]').val();
+            console.log(txt1);
+            console.log(txt2);
+            console.log('----------------------');
+            console.log(txt3);
+            console.log(txt4);
+            const chckedRdo = $('input[type=radio]:checked').val();
+            console.log(chckedRdo);
+        });
+    </script>
+</head>
+<body>
+    <input type="text" class="txt1" value="class - txt1 입니다">
+    <input type="text" class="txt2" value="class - txt2 입니다">
+    <input type="text" name="txt1" value="tag - txt1 입니다">
+    <input type="text" name="txt2" value="tag - txt2 입니다">
+    <input type="radio" name="rdo" value="첫번째">
+    <input type="radio" name="rdo" value="두번째" checked>
+</body>
+</html>
