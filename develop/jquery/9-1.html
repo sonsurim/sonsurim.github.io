@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        table{
+            width : 100%;
+            border: 1px solid black;
+
+        }
+        td{
+            border: 1px solid black;
+
+        }
+        td:first-child{
+            width : 30%;
+        }
+    </style>
+    <script src="./jquery-3.4.1.min.js"></script>
+    <script>
+        $(function(){
+            $.ajax({
+                // form action과 같은 역할
+                url : './ajaxTest.html',
+                // form method와 같은 역할
+                type : 'GET',
+                // form은 알아서 input 태그들을 전송하지만 ajax는 data 속성을 따로 전송해주어야 한다.
+                // 데이터를 무슨 데이터 타입으로 받을건지
+                dataType : 'html',
+                // 중요함, 화면에서 보이지는 않지만 ajax를 통해서 이미 호출이 된다. 호출이 되고 로직을 실행하고 결과값을 가져오는데 success에서 data라는 매개변수가 데이터를 가져오게된다.
+                success : function(data){
+                    $('table').html(data);
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <form action="등록URL">
+        <input type="text" name="content">
+        <input type="submit" value="전송">
+    </form>
+    <table width="100%">
+    </table>
+</body>
+</html>
