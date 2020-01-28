@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            display: none;
+        }
+    </style>
+    <script src="./jquery-3.4.1.min.js"></script>
+    <script>
+        $(function(){
+            $('input[type=button]').click(function(){
+                let idx = $('input[type=button]').index(this);
+
+                // 1. 각 버튼을 누르면 해당되는 index의 layer를 출력시킨다.
+                // 단, 다른 영역들은 닫히고 클릭된 영역만 보여준다.
+                $('.layer').hide();
+                $('.layer').eq(idx).show();
+
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="button" value="button1">
+    <input type="button" value="button2">
+    <input type="button" value="button3">
+    <div class="layer">
+        layer1<br>
+        layer1<br>
+        layer1<br>
+        layer1<br>
+    </div>
+    <div class="layer">
+        layer2<br>
+        layer2<br>
+        layer2<br>
+        layer2<br>
+    </div>
+    <div class="layer">
+        layer3<br>
+        layer3<br>
+        layer3<br>
+        layer3<br>
+    </div>
+</body>
+</html>

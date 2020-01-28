@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        table{
+            border : 1px solid black;
+        }
+        td{
+            border : 1px solid black;
+        }
+    </style>
+    <script src="./jquery-3.4.1.min.js"></script>
+    <script>
+        $(function(){
+            $('input[type=button]').click(function(){
+                $.ajax({
+                    url : './dummy.json',
+                    type : 'GET',
+                    dataType : 'json',
+                    success : function(data){
+                        $('.title-layer').html(`<h1>${data.title}</h1>`);
+                        $('.subject-layer').html(`<h2>${data.subject}</h2>`);
+
+                        const list = data.list;
+                        let txt;
+                        // for(let i = 0; i < list.length; i++){
+                        //     txt += `<tr>
+                        //     <td>${list[i].subject}</td>
+                        //     <td>${list[i].content}</td>
+                        //     </tr>`;
+                        // }
+                        // $('table').html(txt);
+                        $.each(list, function(index, data){
+                            //data === list[i]
+                            txt += `<tr>
+                             <td>${data.subject}</td>
+                             <td>${data.content}</td>
+                             </tr>`;
+                        });
+                        $('table').html(txt);
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="button" value="load">
+    <div class="title-layer"></div>
+    <div class="subject-layer"></div>
+    <table width="100%"></table>
+</body>
+</html>

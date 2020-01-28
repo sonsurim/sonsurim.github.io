@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            display : none;
+            border : 1px solid black;
+        }
+    </style>
+    <script src="./jquery-3.4.1.min.js"></script>
+    <script>
+        $(function(){
+            $('input[value=show]').click(function(){
+                // $('div').show();
+                // $('div').fadeIn();
+                $('div').slideDown({
+                    duration : 100
+                });
+            });
+            $('input[value=hide]').click(function(){
+                // $('div').hide();
+                // $('div').fadeOut();
+                $('div').slideUp();
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="button" value="show">
+    <input type="button" value="hide">
+    <div>
+        jQuery 실무 skill 예제 <br>
+        jQuery 실무 skill 예제 <br>
+        jQuery 실무 skill 예제 <br>
+        jQuery 실무 skill 예제 <br>
+        jQuery 실무 skill 예제 <br>
+        jQuery 실무 skill 예제 <br>
+    </div>
+</body>
+</html>
