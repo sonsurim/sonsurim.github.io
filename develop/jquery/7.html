@@ -13,14 +13,14 @@
             $('input[type="text"]:eq(2)').val();
             $('input[type="text"]:eq(3)').val();
             $('div').each(function(index){
-                // const txt = $('div').eq(index).find('input[type=text]').val();
+                const txt = $('div').eq(index).find('input[type=text]').val();
                 // $('div').eq(index) === $(this)
-                // const txt = $(this).find('input[type=text]').val();
-                // console.log(txt);
-                // console.log($(this).html())
-                // if(index === 1){
-                //     return false;
-                // }
+                const txt = $(this).find('input[type=text]').val();
+                console.log(txt);
+                console.log($(this).html())
+                if(index === 1){
+                    return false;
+                }
                 const txtTag = `임시값${index}`
                 $(this).find('input[type=text]').attr('value', txtTag);
             })
