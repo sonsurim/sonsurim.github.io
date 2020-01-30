@@ -1,121 +1,103 @@
-const startBtn = document.querySelector('.start-btn');
-
-let count = 0;
 let isPlay = false;
 let turn = 0;
+let count = 0;
 
-let ranNum;
 let preNum;
 let moleNum;
 
-function setMole(){
-    const holeContainer = document.querySelector('.hole-container');
+function createMole(){
     for(let i = 0; i < 9; i++){
-        const div = document.createElement('div');
-        const img = document.createElement('img');
-        img.src = 'img/mole.png';
-        img.id = i;
-        img.classList.add('mole');
-        div.appendChild(img);
-        div.classList.add('hole');
-        holeContainer.appendChild(div);
+        const div = $('<div class="hole"></div>');
+        const img = $(`<img id = "${i}" class="mole" src="img/mole.png">`);
+        div.append(img);
+        $('.hole-container').append(div);
     }
 }
 
-function catchMole() {
-    moleAgain();
-    clearTimeout(missMole);
-    count ++;
-    const span = document.querySelector('.count');
-    span.textContent = `${count}`;
-}
-
 function moleActive(moleNum){
-    moleNum.addEventListener('click', catchMole);
-    moleNum.classList.add('active');
+    moleNum.click(catchMole);
+    moleNum.addClass('active');
 }
 
 function moleInactive(moleNum){
-    moleNum.removeEventListener('click', catchMole);
-    moleNum.classList.remove('active');
+    moleNum.unbind();
+    moleNum.removeClass('active');
 }
 
 function countReset(){
     turn = 0;
     count = 0;
-    const span = document.querySelector('.count');
-    span.textContent = `${count}`;
-    startBtn.disabled = false;
-    startBtn.classList.remove('btn-active');
+    $('.count').html(`${count}`);
+    $('.start-btn').disabled = false;
+    $('.start-btn').removeClass('btn-active');
 }
 
 function modalPop(){
-    const modal = document.querySelector('.modal');
-    const modalCount = modal.querySelector('.modal-count');
-    modalCount.textContent = `${count}0`;
-    modal.classList.add('active');
+    $('modal-count').html(`${count}0`);
+    $('.modal').addClass('active');
 
     setTimeout(function(){
-        modal.classList.remove('active');
+        $('.modal').removeClass('active');
         countReset();
     }, 3000);
 }
-
-function getRanNum() {
-    ranNum = Math.floor(Math.random() * 9);
-    if ( preNum !== ranNum ) {
-        preNum = ranNum;
-        return ranNum;
-    }else{
-        return getRanNum();
-    }
-};
 
 function moleAgain(){
     if(turn === 10){
         isPlay = false;
         moleInactive(moleNum);
         clearTimeout(missMole);
-
-        setTimeout(function(){
-            modalPop();
-        }, 800)
+        setTimeout(modalPop, 800)
     }else{
         moleInactive(moleNum);
         clearTimeout(missMole);
-
-        setTimeout(function(){
-            startGame();
-        }, 1000);
+        setTimeout(startGame, 1000);
     }
 };
 
+function catchMole(){
+    moleAgain();
+    clearTimeout(missMole);
+    count ++;
+    $('.count').html(`${count}`);
+}
+
+function getRanNum(){
+    let ranNum = Math.floor(Math.random() * 9);
+
+    if ( preNum !== ranNum ){
+        preNum = ranNum;
+        return ranNum;
+    }else{
+        return getRanNum();
+    }
+}
+
 function startGame(){
-    if (turn < 10){
-        moleNum = document.getElementById(`${getRanNum()}`);
+    if(turn < 10){
+        moleNum = $(`#${getRanNum()}`);
         moleActive(moleNum);
         missMole = setTimeout(moleAgain, 3000);
 
         turn++;
-    };
-};
+    }
+}
 
 function init(){
-    startBtn.addEventListener('click', function(){
+    createMole();
+
+    $('.start-btn').click(function(){
         isPlay = !isPlay;
 
         if(isPlay && count === 0){
-            startBtn.classList.add('btn-active');
-            startBtn.disabled = 'disabled';
-            setTimeout(function(){
-                startGame();
-            }, 1000);
+            $('.start-btn').addClass('btn-active');
+            $('.start-btn').disabled = 'disabled';
+            setTimeout(startGame,1000);
         }else{
-            startBtn.disabled = false;
+            $('.start-btn').disabled = false;
         }
-    });
 
-    setMole();
+    });
 }
 
 init();
