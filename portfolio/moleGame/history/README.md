@@ -34,20 +34,34 @@
 
 ## 프로젝트 소스 코드
 [업데이트 일자 : 2020. 01. 30]
+### AS-IS
+![mole1](https://sonsurim.github.io/portfolio/img/mole1.PNG)<br/>
+![mole1-1](https://sonsurim.github.io/portfolio/img/mole1-1.PNG)<br/>
+### TO-BE
 ![mole1_1](https://sonsurim.github.io/portfolio/img/mole1_1.PNG)<br/>
 9개의 두더지 굴을 초기에 세팅해주는 함수입니다.<br/>
 hole의 이미지는 css로 미리 구현을 해놓은 뒤, 랜덤한 번호로 두더지를 불러와야 하기 때문에 img의 id에 차례대로 id 값을 넣어주었습니다.
 
+### AS-IS
+![mole2](https://sonsurim.github.io/portfolio/img/mole2.PNG)<br/>
+### TO-BE
 ![mole2_1](https://sonsurim.github.io/portfolio/img/mole2_1.PNG)<br/>
 게임을 시작하는 버튼의 이벤트 핸들러 함수입니다.<br/>
 시작 버튼을 누르는 순간, 사용자의 게임 여부를 판단하는 isPlay 변수를 true로 바꿔줌과 동시에 시작 버튼을 비활성화로 만들어 줍니다.<br/>
 setTimeout 함수를 이용하여 버튼을 누르고 1초 뒤, 게임을 시작하게 만들어 주었습니다.
 
+### AS-IS
+![mole3](https://sonsurim.github.io/portfolio/img/mole3.PNG)<br/>
+![mole3-1](https://sonsurim.github.io/portfolio/img/mole3-1.PNG)<br/>
+### TO-BE
 ![mole3_1](https://sonsurim.github.io/portfolio/img/mole3_1.PNG)<br/>
 두더지를 불러주며 게임을 작동하는 함수입니다.<br/>
 난수를 생성하여 해당 난수 자리에 있는 두더지를 불러주며 기회를 체크하기 위한 turn 변수를 1씩 증가시켜 주었습니다.<br/>
 못 잡을 경우와 잡을 경우를 대비하여 moleAgain에 대한 리턴 값을 missMole이라는 변수에 담아주었습니다.<br/>
 
+### AS-IS
+![mole3-2](https://sonsurim.github.io/portfolio/img/mole3-2.PNG)<br/>
+### TO-BE
 ![mole3_2](https://sonsurim.github.io/portfolio/img/mole3_2.PNG)<br/>
 두더지를 잡는 순간, catchMole이라는 이벤트 핸들러 함수가 발생합니다.
 
@@ -57,10 +71,16 @@ setTimeout 함수를 이용하여 버튼을 누르고 1초 뒤, 게임을 시작
 그 후, 1초 뒤에 게임을 다시 시작해 주었습니다.<br/>
 startGame과 moleAgain을 통해 두더지의 등장을 표현해 주었습니다.<br/>
 
+### AS-IS
+![mole4](https://sonsurim.github.io/portfolio/img/mole4.PNG)<br/>
+### TO-BE
 ![mole4_1](https://sonsurim.github.io/portfolio/img/mole4_1.PNG)<br/>
 두더지를 잡았다는 표시를 해주는 함수입니다.<br/>
 잡은 횟수를 체크하기 위한 count 변수에 1을 증가시킨 뒤, 그 값을 화면에 표시해 주었습니다.
 
+### AS-IS
+![mole6](https://sonsurim.github.io/portfolio/img/mole6.PNG)<br/>
+### TO-BE
 ![mole6_1](https://sonsurim.github.io/portfolio/img/mole6_1.PNG)<br/>
 잡은 횟수, 도전 기회를 초기화 시켜주는 함수와 모달을 띄워주는 함수입니다.
 

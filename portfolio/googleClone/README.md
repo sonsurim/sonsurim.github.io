@@ -7,7 +7,7 @@
 
 * **URL** : [https://sonsurim.github.io/googleClone/index.html](https://sonsurim.github.io/googleClone/index.html)
 
-* **개발 환경** : HTML, CSS, JavaScript, Fontello, VScode, Git
+* **개발 환경** : HTML, CSS, JavaScript, jQuery, Fontello, VScode, Git
 
 * **프로젝트 목표와 내용**
     > - **목표** : HTML, CSS, JavaScript 기본 이해도와 실력 향상
@@ -20,12 +20,19 @@
 * **느낀 점 및 배운 점** : 각각의 HTML 구조와 적용되는 CSS 효과가 달라도 구현되는 화면이 같을 수 있다는 점에 흥미가 생겨 빠른 속도로 마무리 지을 수 있었던 프로젝트였습니다.
 
 ## 프로젝트 소스 코드
+[업데이트 일자 : 2020.01.30]
+### AS-IS
 ![google_img5](https://sonsurim.github.io/portfolio/img/google_img5.PNG)<br/>
-실제 사이트의 검색창 그림자 효과와 검색 기능을 작동시키는 함수입니다.
+### TO-BE
+![google_img7](https://sonsurim.github.io/portfolio/img/google_img7.PNG)<br/>
+실제 사이트의 검색창 그림자 효과와 검색 기능을 작동시키는 함수입니다. 기존의 vanilla JavaScript로 작성한 코드를 jQuery로 변경하였습니다.
 
+### AS-IS
 ![google_img6](https://sonsurim.github.io/portfolio/img/google_img6.PNG)<br/>
+### TO-BE
+![google_img8](https://sonsurim.github.io/portfolio/img/google_img8.PNG)<br/>
 모달을 제어할 수 있는 함수입니다.<br/>
-document 클릭 시는 항상 class가 remove 되어야 하고 모달이 보이지 않아야 하기 때문에 visible = false로 항시 설정해준 뒤, 모달 클릭 시에만 !visible을 해줌으로 if문을 더 간결하게 만들었습니다.
+document 클릭 시는 항상 class가 remove 되어야 하고 모달이 보이지 않아야 하기 때문에 visible = false로 항시 설정해준 뒤, 모달 클릭 시에만 !visible을 해줌으로 if문을 더 간결하게 만들었습니다. 기존의 vanilla JavaScript로 작성한 코드를 jQuery로 변경하였습니다.
 
 
 ## 프로젝트 구현 이미지
