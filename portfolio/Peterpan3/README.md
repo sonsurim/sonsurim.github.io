@@ -7,7 +7,7 @@
 
 * **URL** : [https://www.peterpanz.com/agency_renewal](https://www.peterpanz.com/agency_renewal)
 
-* **개발 환경** : HTML, CSS, SASS, JavaScript, Bootstrap, Atom, Zeplin, Node.js, Git
+* **개발 환경** : HTML, CSS, SCSS, JavaScript, Bootstrap, Atom, Zeplin, Node.js, Git
 
 * **프로젝트 목표와 내용**
     > - **목표** : 사용자와 서비스 내부의 불편함을 개선
