@@ -33,7 +33,7 @@ function countReset(){
 }
 
 function modalPop(){
-    $('modal-count').html(`${count}0`);
+    $('.modal-count').html(`${count}0`);
     $('.modal').addClass('active');
 
     setTimeout(function(){
@@ -58,7 +58,7 @@ function moleAgain(){
 function catchMole(){
     moleAgain();
     clearTimeout(missMole);
-    count ++;
+    count++;
     $('.count').html(`${count}`);
 }
 
